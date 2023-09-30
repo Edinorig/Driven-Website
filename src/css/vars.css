@@ -1,0 +1,28 @@
+:root {
+
+    /* Original variables */
+  
+    --primary-color: #fff;
+    --secondary-color: #1E1E1E;
+    --accent-color: #67BC93;
+    
+    /* Text colors */
+    
+    --text-main: #fff; 
+    --text-main-hovered: #D9D9D9; 
+    --text-accent: #67BC93;
+    --text-accent-hovered: #454545;
+    --text-dark: #1E1E1E;
+  
+    /* Background colors */
+  
+    --bg-main: #444;
+    --bg-secondary: #313131;
+    --bg-accent: #67BC93;
+    --bg-light: #FFFFFF;
+    --bg-dark: #151515;
+    --bg-dark-soft: #1e1e1e;
+    --bg-medium: #313131; 
+    --bg-medium-soft: #454545;
+  
+  }

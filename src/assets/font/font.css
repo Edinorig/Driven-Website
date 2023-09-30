@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Zen Dots', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {font-size: 1.8rem;}
+
+h2 {font-size: 1.5rem;}
+
+h3 {font-size: 1.4rem;}
+
+h4 {font-size: 1.25rem;}
+
+h5 {font-size: 0.93rem;}
+
+
+h6 {font-size: 0.8rem;}
+
+/* 
+1.8
+1.4
+1.25
+0.9
+0.93
+0.8 */

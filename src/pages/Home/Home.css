@@ -1,0 +1,126 @@
+.wrapper-information {
+    margin: 4.1rem 0 0 0;
+}
+
+.primary-text-information {
+    font-size: 6.875rem;
+    color: var(--text-accent);
+}
+
+.secondary-text {
+    color: var(--text-main);
+    margin: 2.5rem 0 0 0;
+    width: 33rem;
+    height: 1.75rem;
+}
+
+.wrapper-position {
+    position: relative;
+}
+
+.wrapper-btn,
+.wrapper-button {
+    margin-top: 0.8rem;
+}
+
+.lambo-photo {
+    position: absolute;
+    top: 9.5rem;
+    right: 0;
+
+    width: 50%;
+}
+
+.banner-diller {
+    width: 100vw;
+    height: 4.5rem;
+    background: var(--bg-medium);
+    margin: 12rem -7.5rem 0 -7.5rem !important;
+}
+
+.wrapper-diller-img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-diller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-services {
+    margin: 7rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapper-primary-text-services {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 3rem 0;
+    width: 100%;
+}
+
+.primary-text-services {
+    font-size: 6.875rem;
+    color: var(--text-accent);
+    -webkit-text-stroke: 1px var(--text-accent);
+    -webkit-text-fill-color: transparent;
+}
+
+.primary-text-slash {
+    font-size: 5.3rem;
+    color: var(--text-accent);
+    -webkit-text-stroke: 1px var(--text-accent);
+    -webkit-text-fill-color: transparent;
+    margin: 0 3.1rem 0.8rem 0;
+}
+
+.wrapper-btn-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem 0 0 0;
+}
+.wrapper-btn-banner-why-us{
+    margin: 4.5rem 0 0 0;
+}
+
+.banner-why-us {
+    width: auto;
+    height: 25rem;
+    background: var(--bg-medium);
+    margin: 7rem -7.5rem 0 -7.5rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-text-why-us {
+    color: var(--text-main);
+    margin: 2.1rem 0 0 0;
+}
+
+.primary-medumi-text-why-us {
+    -webkit-text-stroke: 0.1px var(--text-main);
+    -webkit-text-fill-color: transparent;
+    margin: 2.6rem 0 0 0;
+}
+
+.secondary-text-why-us {
+    width: 60rem;
+    color: var(--text-main);
+    margin: 3rem 0 0 0;
+}
+
+.wrapper-text-why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

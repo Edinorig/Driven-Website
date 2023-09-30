@@ -1,0 +1,53 @@
+
+button.greyAccent:hover {
+    background: var(--bg-accent);
+    color: var(--text-accent-hovered);
+}
+
+.greenText {
+    color: var(--text-accent);
+    font-family: Zen Dots;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.blackBackground {
+    background: var(--bg-dark);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-accent);
+}
+
+.darkHover {
+    background: var(--bg-accent);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-accent);
+    color: var(--bg-dark);
+}
+
+.largeSize {
+    width: 21rem;
+    height: 2.5rem;
+}
+.extraLargeSize {
+    width: 31.25rem;
+    height: 3.75rem;
+}
+
+.smallSize {
+    width: 11.5rem;
+    height: 2.5rem;
+}
+
+.blackMedimuSoftBackground {
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-accent);
+    background: var(--bg-medium-soft);
+}
+
+.blackMedimuSoftHover {
+    border: 1px solid var(--bg-accent);
+    background: var(--bg-accent);
+    color: var(--text-accent-hovered);
+}
