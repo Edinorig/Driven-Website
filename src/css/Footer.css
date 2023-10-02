@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    height: 35rem;
+    height: 30rem;
 
     position: sticky;
 
@@ -10,7 +10,7 @@ footer {
 }
 
 .wrapper-footer-information {
-    width: 74.75rem;
+    width: 100%;
     height: 27.4375rem;
 
     padding: 1.3rem 7rem 0 7rem;

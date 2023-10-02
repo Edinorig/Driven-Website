@@ -36,3 +36,10 @@
 .navBar-menu:hover{
     color: var(--text-main-hovered);
 }
+
+@media all and (max-with: 430px){
+    .navbar{
+        height: 3rem;
+        height: 100vw;
+    }
+}

@@ -13,10 +13,10 @@ import Footer from '../../components/Footer';
 
 const Home = () => {
     return (
-        <div>
+        <main>
             <div className='wrapper-information wrapper-position'>
                 <p className='primary-text-information'> EXOTIC CAR DETAILING</p>
-                <h6 className='secondary-text'>LOCATED IN CHICAGO ILLINOIS. PREMIUM QUALITY CAR SELLING SHOP</h6>
+                <h6 className='secondary-text-information'>LOCATED IN CHICAGO ILLINOIS. PREMIUM QUALITY CAR SELLING SHOP</h6>
                 <div className='wrapper-button'>
                     <CommonButton
                         color="greenText"
@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
             </div>
             <Footer/>
-        </div>
+        </main>
     );
 }
 

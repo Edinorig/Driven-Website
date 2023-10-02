@@ -19,7 +19,7 @@ const CommonButton = ({ color, background, size, hover, text, link }) => {
         link = "/learn-more";
         break;
       case "call-now":
-        link = "tel:+1-708-654-2206";
+        link = "tel:+1-708-515-0171";
         break;
       default:
         link = "/";
