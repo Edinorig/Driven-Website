@@ -1,23 +1,21 @@
 footer {
     width: 100vw;
-    height: 30rem;
+    height: 26rem;
 
     position: sticky;
 
     margin: 0 -7.5rem 0 -7.5rem !important;
-
-    background: var(--bg-dark-soft);
 }
 
 .wrapper-footer-information {
-    width: 100%;
-    height: 27.4375rem;
+    height: 100%;
 
     padding: 1.3rem 7rem 0 7rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--bg-dark-soft);
 }
 
 .wrapper-social-icons {

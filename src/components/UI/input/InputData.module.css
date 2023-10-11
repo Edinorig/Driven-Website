@@ -1,0 +1,33 @@
+.inputData{
+    height: 4rem;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--bg-accent);
+    padding: 0 0 0 0.5rem;
+    box-sizing: border-box;
+    color: var(--text-main);
+}
+
+.errorMessage{
+    border: 1px solid var(--bg-error);
+}
+
+.wrapperInput{
+    margin: 0.5rem 0 0 0;
+}
+
+.inpurPimaryText{
+    color: var(--text-main);
+    margin:  0 0 0.4rem 0;
+}
+
+::placeholder{
+    font-family: 'Zen Dots', cursive;
+    color: var( --text-main-hovered);
+}
+
+.initionalWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+}

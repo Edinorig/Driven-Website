@@ -4,10 +4,19 @@ import "../../../../css/vars.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const CommonButton = ({ color, background, size, hover, text, link }) => {
+const CommonButton = ({
+  color,
+  background,
+  size,
+  hover,
+  text,
+  link,
+  onClick,
+  value
+}) => {
   const [hovered, setHovered] = useState(false);
 
-  let switchLinks = (buttonLink) => {
+  let switchLinks = () => {
     switch (link) {
       case "contact-us":
         link = "/contact-us";
@@ -28,9 +37,17 @@ const CommonButton = ({ color, background, size, hover, text, link }) => {
     return link;
   };
 
+  const handleButtonClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <Link to={switchLinks(link)}>
       <button
+      value={value}
+        onClick={handleButtonClick}
         className={`${classes.button} ${classes[color]} ${classes[size]} ${
           classes[background]
         } ${hovered ? classes[hover] : ""}`}

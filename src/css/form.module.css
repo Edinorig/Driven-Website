@@ -1,0 +1,78 @@
+.primaryTextContactUsInsertData {
+    color: var(--text-main);
+    padding: 0.7rem 0 0;
+}
+
+.wrapperInputs {
+    margin: 2rem 0 0;
+}
+
+.wrapperSelectCarInsormation {
+    margin: 0.9rem 0 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wraperServices {
+    margin: 2.2rem 0 0;
+}
+
+.wrapperServiceText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapperAddService {
+    width: 22%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.addIcon {
+    cursor: pointer;
+}
+
+
+.wrapper_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2.3rem 0 0;
+}
+
+.wrappesInputsHoryzontaly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.messageTextarea {
+    width: 100%;
+    height: 6rem;
+    background: var(--bg-accent);
+    border: none;
+    resize: none;
+    margin: 0.4rem 0 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--text-dark-soft);
+}
+
+.messageTextarea::placeholder {
+    color: var(--text-dark-soft);
+}
+
+.primaryText {
+    margin: 0.4rem 0 0;
+}
