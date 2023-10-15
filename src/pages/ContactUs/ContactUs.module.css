@@ -76,3 +76,74 @@
 .primaryTextContactUsLocation{
     color: var(--text-dark);
 }
+
+.wraperHorizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wraperShopInformation{
+    margin: 1.5rem 0 0;
+}
+
+.secondaryTextShopInformation{
+    color: var(--text-dark);
+}
+
+.wraperGaleryShop,
+.wraperHorizontal{
+    margin: 1.2rem 0 0;
+}
+
+.wraperGallery,
+.wraperLocation{
+    margin: 0.4rem 0 0;
+}
+
+.wraperGallery{
+    height: 16rem;
+    background-color: var(--bg-medium);
+}
+
+.hegonal5{
+    height: 11.8rem;
+    position: absolute;
+    left: 50%;
+}
+.hegonal6{
+    height: 4.7rem;
+    position: absolute;
+    left: 70%;
+    bottom: -40%;
+}
+.hegonal7{
+    height: 11.7rem;
+    position: absolute;
+    left: 80%;
+    bottom: -55%;
+}
+.hegonal8{
+    height: 4.7rem;
+    position: absolute;
+    left: 58%;
+    bottom: -70%;
+}
+.hegonal9{
+    height: 6.7rem;
+    position: absolute;
+    left: 68%;
+    bottom: -57%;
+}
+.hegonal10{
+    height: 4.7rem;
+    position: absolute;
+    left: 78%;
+    bottom: -65%;
+}
+.hegonal11{
+    position: absolute;
+    left: 93.4%;
+    bottom: -70%;
+}

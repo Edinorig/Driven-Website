@@ -29,5 +29,5 @@
 .initionalWrapper{
     display: flex;
     justify-content: space-between;
-    width: 18rem;
+    width: 100%;
 }

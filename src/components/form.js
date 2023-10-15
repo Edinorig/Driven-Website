@@ -8,7 +8,19 @@ import styles from '../css/form.module.css';
 
 const Form = () => {
 
-    const [inputsArray, setInputsArray] = useState([
+    const vehicleYear = ["2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009",
+        "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994",
+        "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979",
+        "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964",
+        "1963", "1962", "1961", "1960", "1959 and before"];
+    const vehicleMake = ["Acura", "Alfa Romeo", "Audi", "BMW", "Buick", "Cadillac", "Chevrolet", "Chrysler", "Dodge", "Ferrari", "Fiat",
+        "Ford", "Genesis", "GMC", "Honda", "Hyundai", "Infiniti", "Jaguar", "Jeep", "Kia", "Land Rover", "Lexus",
+        "Lincoln", "Maserati", "Mazda", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Porsche", "Ram", "Rivian",
+        "Rolls-Royce", "Saab", "Subaru", "Tesla", "Toyota", "Volkswagen", "Volvo", "Other"];
+    const vehicleType = ["Sedan", "SUV", "Truck", "Van", "Convertible", "Coupe", "Wagon", "Hatchback", "Sports Car", "Electric", "Hybrid", "Crossover", "Luxury Car", "Other"];
+    const vehicleService = ['Wash car', 'wrap', 'tinting'];
+
+    const [dataArray, setDataArray] = useState([
         {
             id: 1,
             textInput: "First Name",
@@ -16,6 +28,8 @@ const Form = () => {
             placeholder: "Input your first name",
             name: "First_Name",
             initials: "initialWrapper",
+            typeComponent: "inputData",
+            errorMessage: "errorMessage",
             value: "",
             validation: null
         },
@@ -26,6 +40,8 @@ const Form = () => {
             placeholder: "Input your last name",
             name: "Last_Name",
             initials: "initialWrapper",
+            typeComponent: "inputData",
+            errorMessage: "errorMessage",
             value: "",
             validation: null
         },
@@ -35,6 +51,9 @@ const Form = () => {
             typeInput: "tel",
             placeholder: "Input your phone number",
             name: "Phone",
+            initials: "restWrapper",
+            typeComponent: "inputData",
+            errorMessage: "errorMessage",
             value: "",
             validation: null
         },
@@ -44,66 +63,113 @@ const Form = () => {
             typeInput: "email",
             placeholder: "Input your email",
             name: "Email",
+            initials: "restWrapper",
+            typeComponent: "inputData",
+            errorMessage: "errorMessage",
             value: "",
             validation: null
         },
         {
             id: 5,
-            textInput: "Vehicle Type",
+            textInput: "Vehicle Model",
             typeInput: "text",
-            placeholder: "Input your Vehicle Type",
-            name: "Vehicle_Type",
+            placeholder: "Input your Vehicle Model",
+            name: "Vehicle_Model",
             value: "",
+            typeComponent: "inputData",
+            initials: "restWrapper",
+            errorMessage: "errorMessage",
             validation: null
-        }
+        },
+        {
+            id: 6,
+            textSelect: "Veichle Make",
+            typeSelect: "Veichle Make",
+            sizeSelect: "smallSize",
+            name: "Veichle_Type",
+            value: null,
+            initials: "restWrapper",
+            arrayOptions: vehicleMake,
+            typeComponent: "selectData",
+            errorMessage: "errorMessage",
+            validation: null
+        },
+        {
+            id: 7,
+            textSelect: "Veichle Type",
+            typeSelect: "Veichle Type",
+            sizeSelect: "smallSize",
+            name: "Veichle_Model",
+            value: null,
+            initials: "restWrapper",
+            arrayOptions: vehicleType,
+            typeComponent: "selectData",
+            errorMessage: "errorMessage",
+            validation: null
+        },
+        {
+            id: 8,
+            textSelect: "Veichle Year",
+            typeSelect: "Veichle Yype",
+            sizeSelect: "smallSize",
+            name: "Veichle_Year",
+            value: null,
+            initials: "restWrapper",
+            arrayOptions: vehicleYear,
+            typeComponent: "selectData",
+            errorMessage: "errorMessage",
+            validation: null
+        },
     ]);
-    const [selectsArray, setSelectsArray] = useState([
+
+    const [servicesInput, setServicesInput] = useState([
         {
             id: 1,
-            textSelect: "Veichle Year",
-            typeSelect: "Veichle Yype",
-            sizeSelect: "smallSize",
-            name: "Veichle_Year",
-            arrayOptions: { vehicleYear }
-        },
-        {
-            id: 2,
-            textSelect: "Veichle Year",
-            typeSelect: "Veichle Yype",
-            sizeSelect: "smallSize",
-            name: "Veichle_Year",
-            arrayOptions: { vehicleYear }
-        },
-        {
-            id: 3,
-            textSelect: "Veichle Year",
-            typeSelect: "Veichle Yype",
-            sizeSelect: "smallSize",
-            name: "Veichle_Year",
-            arrayOptions: { vehicleYear }
+            textSelect: "Services 1",
+            typeSelect: "Service",
+            sizeSelect: "largeSize",
+            name: "Service_1",
+            value: null,
+            initials: "restWrapper",
+            arrayOptions: vehicleService,
+            typeComponent: "selectData",
+            errorMessage: "errorMessage",
+            validation: null
         },
     ]);
 
     const form = useRef();
 
-    const vehicleYear = ['2020', '2021', '2022', '2023'];
-    const vehicleModel = ['Model A', 'Model B', 'Model C'];
-    const vehicleColor = ['Red', 'Blue', 'Green', 'Yellow'];
-    const vehicleService = ['Wash car', 'wrap', 'tinting'];
-
-    const [servicesInput, setServicesInput] = useState([
-        <SelectData textSelect="Services 1" type-select="Service" sizeSelect="largeSize" name="Service 1" arrayOptions={vehicleService} />
-    ]);
-
-    const onChange = (e) => {
+    const onChangeInput = (e) => {
         const { name, value, type } = e.target;
         const isValid = validateType(type, value);
-        setInputsArray(prevInputs => prevInputs.map(input =>
-            input.name === name ? { ...input, value, validation: isValid } : input
+        setDataArray(prevInputs => prevInputs.map(input =>
+            input.name === name && input.typeComponent === "inputData" ? { ...input, value: value, validation: isValid } : input
         ));
+        console.log(dataArray);
+    }
+    const onChangeSelect = (e) => {
+        const { name, value } = e.target;
+        console.log(value, name);
+        let checked = value !== null || value !== false ? true : false;
+        console.log(checked);
+        setDataArray(prevInputs => prevInputs.map(select =>
+            select.name === name && select.typeComponent === "selectData" ? { ...select, value: value, validation: checked } : select
+        ));
+        console.log(dataArray);
+    }
+    const onChangeSelectServices = (e) => {
+        const { name, value } = e.target;
+        console.log(value, name);
+        let checked = value !== null || value !== false ? true : false;
+        console.log(checked);
+        setServicesInput(prevInputs => prevInputs.map(select =>
+            select.name === name && select.typeComponent === "selectData" ? { ...select, value: value, validation: checked } : select
+        ));
+        console.log(dataArray);
     }
 
-    function validateType(typevalidation, text) {
+    const validateType = (typevalidation, text) => {
         switch (typevalidation) {
             case "text":
                 const regex = /^[A-Za-z'-]+$/;
@@ -112,7 +178,7 @@ const Form = () => {
                 }
                 return false;
             case "tel":
-                const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
+                const phoneRegex = /^\d{10}$/;
                 return phoneRegex.test(text);
             case "email":
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -126,25 +192,80 @@ const Form = () => {
     const addServices = (e) => {
         console.log(e.target);
         if (servicesInput.length < 2) {
-            setServicesInput([...servicesInput, <SelectData
-                textSelect={`Services ${servicesInput.length + 1}`}
-                type-select="Service"
-                sizeSelect="largeSize"
-                name={`Services ${servicesInput.length + 1}`}
-                arrayOptions={vehicleService}
-            />])
+            setServicesInput([...servicesInput, {
+                id: 2,
+                textSelect: "Services_2",
+                typeSelect: "Service",
+                sizeSelect: "largeSize",
+                name: "Service 2",
+                value: null,
+                initials: "restWrapper",
+                arrayOptions: vehicleService,
+                typeComponent: "selectData",
+                errorMessage: "errorMessage",
+                validation: null
+            },])
         }
     }
 
     const sendEmail = (e) => {
-        console.log(form.current);
 
-        emailjs.sendForm('service_1306a2q', 'template_9rotvow', form.current, 'WypVsQtlrimhZVvSQ')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+
+        const isValidData = dataArray.every(ele => ele.validation === true);
+        const isValidDataServices = servicesInput.every(ele => ele.validation === true);
+
+        dataArray.forEach((ele) => {
+            if (ele.value === "" || ele.value === null) {
+                setDataArray((prevInputs) =>
+                    prevInputs.map((input) =>
+                        input.id === ele.id ? { ...input, validation: false } : input
+                    )
+                );
+            }
+        });
+
+        servicesInput.forEach((ele) => {
+            if (ele.value === null) {
+                console.log(ele);
+                setServicesInput((prevInputs) =>
+                    prevInputs.map((input) =>
+                        input.id === ele.id ? { ...input, validation: false } : input
+                    )
+                );
+            }
+        });
+
+        console.log(isValidData);
+
+        if (isValidData && isValidDataServices) {
+            setDataArray(prevInputs =>
+                prevInputs.map(ele => {
+                    if (ele.typeComponent === "selectData") {
+                        return {
+                            ...ele,
+                            value: null,
+                            validation: null
+                        };
+                    } else {
+                        return {
+                            ...ele,
+                            value: "",
+                            validation: null
+                        };
+                    }
+                })
+            );
+            setServicesInput((prevInputs) =>
+                prevInputs.map((input) => ({ ...input, value: null, validation: null }))
+            );
+
+            emailjs.sendForm('service_1306a2q', 'template_9rotvow', form.current, 'WypVsQtlrimhZVvSQ')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+        }
     };
 
     return (
@@ -153,49 +274,37 @@ const Form = () => {
                 <h2><p className={styles.primaryTextContactUsInsertData}>Message us</p></h2>
                 <div className={styles.wrapperInputs}>
                     <div className={styles.wrappesInputsHoryzontaly}>
-                        {inputsArray.map((input) => (
-                            input.id <= 2 ? (
+                        {dataArray.map((input) => (
+                            input.initials === "initialWrapper" && input.typeComponent === "inputData" ? (
                                 <InputData
                                     key={input.id}
                                     {...input}
-                                    onChange={onChange}
+                                    onChange={onChangeInput}
                                 />
                             ) : null
                         ))}
 
                     </div>
-                    {inputsArray.map((input) => (
-                        input.id > 2 ? (
+                    {dataArray.map((input) => (
+                        input.initials === "restWrapper" && input.typeComponent === "inputData" ? (
                             <InputData
                                 key={input.id}
                                 {...input}
-                                onChange={onChange}
+                                onChange={onChangeInput}
                             />
                         ) : null
                     ))}
                 </div>
                 <div className={styles.wrapperSelectCarInsormation}>
-                    <SelectData
-                        textSelect="Veichle Year"
-                        type-select="Veichle Yype"
-                        sizeSelect="smallSize"
-                        name="Veichle_Year"
-                        arrayOptions={vehicleYear}
-                    />
-                    <SelectData
-                        textSelect="Veichle Model"
-                        type-select="Veichle Model"
-                        sizeSelect="smallSize"
-                        name="Veichle_Model"
-                        arrayOptions={vehicleModel}
-                    />
-                    <SelectData
-                        textSelect="Veichle Color"
-                        type-select="Veichle Type"
-                        sizeSelect="smallSize"
-                        name="Veichle_Color"
-                        arrayOptions={vehicleColor}
-                    />
+                    {dataArray.map((select) => (
+                        select.initials === "restWrapper" && select.typeComponent === "selectData" ? (
+                            <SelectData
+                                key={select.id}
+                                {...select}
+                                onChange={onChangeSelect}
+                            />
+                        ) : null
+                    ))}
                 </div>
                 <div className={styles.wraperServices}>
                     <div className={styles.wrapperServiceText}>
@@ -209,8 +318,14 @@ const Form = () => {
                         </div>
                     </div>
                     <div className={styles.wrapperInputServices}>
-                        {servicesInput.map((input, index) => (
-                            <div key={index}>{input}</div>
+                        {servicesInput.map((select, index) => (
+                            select.initials === "restWrapper" && select.typeComponent === "selectData" ? (
+                                <SelectData
+                                    key={select.id}
+                                    {...select}
+                                    onChange={onChangeSelectServices}
+                                />
+                            ) : null
                         ))}
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SelectData.module.css";
 
-const SelectData = ({ textSelect, sizeSelect, name, arrayOptions }) => {
+const SelectData = ({ textSelect, sizeSelect, name, arrayOptions, onChange, value, validation }) => {
   return (
     <div className={styles.wrapperSelectData}>
       <h6>
@@ -10,13 +10,17 @@ const SelectData = ({ textSelect, sizeSelect, name, arrayOptions }) => {
       <select
         required
         name={name}
-        className={`${styles.selectData} ${styles[sizeSelect]}`}
+        className={`${styles.selectData} ${styles[sizeSelect]} ${
+          validation === false ? styles.errorMessage : ""
+        }`}
+        onChange={onChange}
+        value={value || ""}
       >
-        <option value="null" defaultValue>
-          SELECT
-        </option>
-        {arrayOptions.map((value, key) => (
-          <option key={key}>{value}</option>
+        <option value="">SELECT</option>
+        {arrayOptions.map((option, index) => (
+          <option key={index} value={option}>
+            {option}
+          </option>
         ))}
       </select>
     </div>

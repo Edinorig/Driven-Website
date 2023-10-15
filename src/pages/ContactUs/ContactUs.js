@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ContactUs.module.css';
 import whiteHegonal from '../../assets/img/icons/white-hegonal.svg'
+import halfHesagonal from '../../assets/img/icons/halfHesagon.svg'
 import greenHegonal from '../../assets/img/icons/green-hegonal.svg'
 import Footer from '../../components/Footer'
 import Form from '../../components/form';
@@ -28,11 +29,65 @@ export const ContactUs = () => {
             <main className={styles.wrapperContactUs}>
                 <article className={styles.wrapperData}>
                     <div className={styles.formWrapper}>
-                    <Form/>
+                        <Form />
                     </div>
                     <div className={styles.locationWrapper}>
                         <h2><p className={styles.primaryTextContactUsLocation}>Contact our DRIVEN CUSTOM locations directly</p></h2>
+                        <div className={styles.wraperShopInformation}>
+                            <div className={styles.wraperHorizontal}>
+                                <h5><p >Location :</p></h5>
+                                <h6><p className={styles.secondaryTextShopInformation}>3208 W Lake Ave Glenview, IL 60026</p></h6>
+                            </div>
+                            <div className={styles.wraperHorizontal}>
+                                <h5><p >Tel :</p></h5>
+                                <h6><p className={styles.secondaryTextShopInformation}>708.834.9116</p></h6>
+                            </div>
+                            <div className={styles.wraperHorizontal}>
+                                <h5><p >Email :</p></h5>
+                                <h6><p className={styles.secondaryTextShopInformation}>dmytro@drivencustomsllc.com</p></h6>
+                            </div>
+                        </div>
+                        <div className={`${styles.wraperGaleryShop} ${styles.wraperLocation}`}>
+                            <h5><p>Photos of shop</p></h5>
+                            <div className={styles.wraperGallery}>
 
+                            </div>
+                        </div>
+                        <div className={`${styles.wraperGaleryShop} ${styles.wraperLocation}`}>
+                            <h5><p>Map</p></h5>
+                            <div className={styles.wraperGallery}>
+                            </div>
+                        </div>
+                        <div className={`${styles.wraperLocation}`}>
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal5}
+                            />
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal6}
+                            />
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal7}
+                            />
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal8}
+                            />
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal9}
+                            />
+                            <img alt=''
+                                src={whiteHegonal}
+                                className={styles.hegonal10}
+                            />
+                            <img alt=''
+                                src={halfHesagonal}
+                                className={styles.hegonal11}
+                            />
+                        </div>
                     </div>
                 </article>
             </main>

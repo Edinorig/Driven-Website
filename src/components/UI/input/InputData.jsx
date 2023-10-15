@@ -9,8 +9,8 @@ const InputData = ({
   initials,
   validation,
   onChange,
+  value
 }) => {
-  console.log(validation);
   return (
     <div className={styles.wrapperInput}>
       <h5>
@@ -25,6 +25,7 @@ const InputData = ({
         placeholder={placeholder}
         required
         onChange={onChange}
+        value={value}
       />
     </div>
   );
