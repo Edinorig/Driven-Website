@@ -30,9 +30,22 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1rem;
-    /* 106.667% */
 }
 
 .navBar-menu:hover{
     color: var(--text-main-hovered);
+}
+
+.services-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media all and (max-with: 430px){
+    .navbar{
+        height: 3rem;
+        height: 100vw;
+    }
 }

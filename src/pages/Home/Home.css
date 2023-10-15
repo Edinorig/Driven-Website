@@ -7,7 +7,7 @@
     color: var(--text-accent);
 }
 
-.secondary-text {
+.secondary-text-information {
     color: var(--text-main);
     margin: 2.5rem 0 0 0;
     width: 33rem;

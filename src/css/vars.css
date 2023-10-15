@@ -13,6 +13,7 @@
     --text-accent: #67BC93;
     --text-accent-hovered: #454545;
     --text-dark: #1E1E1E;
+    --text-dark-soft: #151515;
   
     /* Background colors */
   
@@ -24,5 +25,6 @@
     --bg-dark-soft: #1e1e1e;
     --bg-medium: #313131; 
     --bg-medium-soft: #454545;
+    --bg-error: #FF0000;
   
   }

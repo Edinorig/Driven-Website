@@ -7,10 +7,21 @@ h4,
 h5,
 h6,
 p,
-a {
+a ,
+input,
+select,
+textarea{
     font-family: 'Zen Dots', cursive;
     margin: 0;
     padding: 0;
+}
+
+
+textarea,
+input,
+select{
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
 h1 {font-size: 1.8rem;}
