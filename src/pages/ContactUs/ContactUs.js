@@ -4,7 +4,7 @@ import whiteHegonal from '../../assets/img/icons/white-hegonal.svg'
 import halfHesagonal from '../../assets/img/icons/halfHesagon.svg'
 import greenHegonal from '../../assets/img/icons/green-hegonal.svg'
 import Footer from '../../components/Footer'
-import Form from '../../components/form';
+import Form from '../../components/Form';
 
 export const ContactUs = () => {
 
