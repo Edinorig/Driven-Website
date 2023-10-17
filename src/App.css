@@ -13,6 +13,7 @@ p {
 }
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 button{
   cursor: pointer;
@@ -21,3 +22,4 @@ button{
   align-items: center;
   justify-content: center;
 }
+
