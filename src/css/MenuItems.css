@@ -2,12 +2,6 @@
     background: none;
 }
 
-/* .menu-name:hover,
-.button-dropdown:hover{
-    color: var(--text-accent);
-} */
-
-
 .button-dropdown {
     height: 3rem;
     display: flex;
@@ -23,10 +17,3 @@ li .menu-items:hover {
     background: var(--text-accent);
     color: var(--text-main);
 }
-
-/* .wrapper-menu-Items  */
-/* li .menu-items:last-child:hover {
-    background: var(--text-accent);
-    border-radius: 0 0 0.6rem 0.6rem;
-    color: var(--text-main);
-} */
