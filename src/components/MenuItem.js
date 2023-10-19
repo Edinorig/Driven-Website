@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
-  console.log(items);
   let ref = useRef();
   useEffect(() => {
     const handler = (event) => {
@@ -29,7 +28,7 @@ const MenuItems = ({ items, depthLevel }) => {
     window.innerWidth > 960 && setDropdown(false);
   };
   return (
-    <li className="menu-items"
+    <div className="menu-items"
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -65,7 +64,7 @@ const MenuItems = ({ items, depthLevel }) => {
             <Link to={items.url}>{items.title}</Link>
           </h6>
       )}
-    </li>
+    </div>
   );
 };
 

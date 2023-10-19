@@ -1,9 +1,50 @@
 .wrapper-blur{
     width: 100vw;
-    height: 38rem;
-    background: linear-gradient(45deg,var(--bg-accent),var(--bg-medium));
+    height: 40rem;
+    background: linear-gradient(50deg,var(--bg-accent),var(--bg-medium));
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
+}
+
+.wrapper-content{
+    padding: 7rem 10rem 0 10rem;
+    height: 28rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper-content-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper-content-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper-content-img img{
+    height: 22rem;
+    margin: 2rem 0 0;
+}
+
+.primary-text-styled{
+    -webkit-text-stroke: 0.1px var(--text-main);
+    -webkit-text-fill-color: transparent;
+    width: 43rem;
+    overflow: hidden;
+}
+
+.wrapper-middle{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-btn-service{
+    margin: 2rem 0 0;
 }
 
 @keyframes color {
