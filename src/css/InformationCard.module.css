@@ -1,0 +1,40 @@
+.wrapperInformationCard {}
+
+.informationCard {
+    background: var(--bg-dark-soft);
+    height: 28rem;
+    width: 15rem;
+
+    padding: 0 1rem 0 1rem;
+    box-sizing: border-box;
+}
+
+.wrapperImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 0 0 0;
+}
+
+.wrapperPrimaryAccentText{
+    margin: 1.8rem 0 0;
+    width: 100%;
+}
+
+.wrapperSecondaryText{
+    margin: 1.8rem 0 0;
+    width: 100%;
+}
+
+.imgIconReadCard{
+    height: 50px;
+}
+
+.accentText{
+    color: var(--text-accent);
+    height: 3.8rem;
+}
+
+.secondaryCarsText{
+    font-size: 0.7rem;
+}
