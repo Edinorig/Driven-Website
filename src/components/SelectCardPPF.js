@@ -5,8 +5,6 @@ import style from '../css/Card.module.css'
 
 const SelectCardPPF = ({ sizeCard, primaryText, secondaryText, button, background, primaryTextList, secondaryTextList, onButtonClick, hover }) => {
     const [hovered, setHovered] = useState(false);
-    console.log({ button });
-
     return (
         <div className={`${style.card} ${style[sizeCard]} ${style[background]}`}>
             <div className={style.wrapperPrimaryText}>
