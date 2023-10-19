@@ -12,14 +12,44 @@ button.greyAccent:hover {
     font-weight: 400;
     line-height: 1rem;
 }
+.whiteText {
+    color: var(--text-main);
+    font-family: Zen Dots;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
 
 .blackBackground {
     background: var(--bg-dark);
     border-radius: 0.0625rem;
     border: 1px solid var(--bg-accent);
 }
+.blackBackgroundWhiteBorder {
+    background: var(--bg-dark);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-light);
+}
+.blackBackgroundGreenBorder {
+    background: var(--bg-dark);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-accent);
+}
 
 .darkHover {
+    background: var(--bg-accent);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-accent);
+    color: var(--bg-dark);
+}
+.darkHoverWhiteBorder {
+    background: var(--bg-light);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-light);
+    color: var(--bg-dark);
+}
+.darkHoverGreenBorder {
     background: var(--bg-accent);
     border-radius: 0.0625rem;
     border: 1px solid var(--bg-accent);

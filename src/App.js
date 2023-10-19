@@ -6,7 +6,7 @@ import LearnMore from './pages/LearnMore';
 import Services from './pages/Services';
 import './assets/font/font.css'
 import Header from './components/Header';
-import PaintProtectionFilmPackages from './pages/PaintProtectionFilmPackages';
+import PaintProtectionFilmPackages from './pages/PaintProtectionFilmPackages/PaintProtectionFilmPackages';
 
 function App() {
   return (

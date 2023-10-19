@@ -12,7 +12,7 @@ const CommonButton = ({
   text,
   link,
   onClick,
-  value
+  value,
 }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -46,7 +46,7 @@ const CommonButton = ({
   return (
     <Link to={switchLinks(link)}>
       <button
-      value={value}
+        value={value}
         onClick={handleButtonClick}
         className={`${classes.button} ${classes[color]} ${classes[size]} ${
           classes[background]
@@ -54,7 +54,7 @@ const CommonButton = ({
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <p>{text}</p>
+        {text}
       </button>
     </Link>
   );
