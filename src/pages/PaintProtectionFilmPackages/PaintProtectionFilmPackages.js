@@ -173,7 +173,9 @@ const PaintProtectionFilmPackages = () => {
     return (
         <div>
             <div className='wrapper-blur-data'>
-                <BlurData />
+                <BlurData 
+                primaryText="Get invisible and strongprotection for your vehicle"
+                />
             </div>
             <div className='wrapper-package'>
                 <div className='wrapper-primary-text'>

@@ -3,12 +3,13 @@ import '../css/BlurData.css'
 import CommonButton from './UI/button/CommonButton/CommonButton';
 import tesla from '../assets/img/icons/tesla.svg'
 
-const BlurData = () => {
+const BlurData = ({ primaryText, secondaryText }) => {
     return (
         <div className='wrapper-blur'>
             <div className='wrapper-content'>
-                <div className=''>
-                    <h1 className='primary-text-styled'><p>Get invisible and strongprotection for your vehicle</p></h1>
+                <div>
+                    <h1><p className='primary-text-styled'>{primaryText}</p></h1>
+                    {secondaryText ? <h6><p className='secondary-text-styled'>{secondaryText}</p></h6> : null}
                     <div className='wrapper-middle'>
                         <div className='wrapper-btn-service'>
                             <CommonButton
@@ -21,7 +22,7 @@ const BlurData = () => {
                             />
                         </div>
                         <div className='wrapper-content-img'>
-                            <img src={tesla} alt='Car styling'/>
+                            <img src={tesla} alt='Car styling' />
                         </div>
                     </div>
                 </div>

@@ -38,6 +38,11 @@
     overflow: hidden;
 }
 
+.secondary-text-styled{
+    color: var(--text-dark);
+    margin: 1rem 0 0;
+}
+
 .wrapper-middle{
     display: flex;
     justify-content: center;
