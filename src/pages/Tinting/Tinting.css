@@ -1,0 +1,39 @@
+.primary-styled-text-green {
+    color: var(--text-accent);
+}
+
+.primary-styled-text-border-white {
+    -webkit-text-stroke: 0.1px var(--text-main);
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper-banner{
+    margin: 5rem -7.5rem 0 -7.5rem !important;
+    background: var(--bg-medium);
+}
+
+.wrapper-tinting-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-banner-primary-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0 0;
+}
+
+.primary-text-tinting-packages{
+    margin: 0 1rem 0 0;
+}
+
+.wrapper-tinting-packages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5rem 0 2.5rem;
+    align-items: center;
+}

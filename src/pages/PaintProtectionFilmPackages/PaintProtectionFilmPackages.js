@@ -3,7 +3,7 @@ import BlurData from '../../components/BlurData';
 import Footer from '../../components/Footer';
 import InformationCard from '../../components/InformationCard';
 import './PaintProtectionFilmPackages.css';
-import SelectCardPPF from '../../components/SelectCardPPF';
+import SelectCard from '../../components/SelectCard';
 import PartialProtection from '../../assets/img/PaintProtectionFilmPackages/Partialrotection.svg';
 import FullFrontProtection from '../../assets/img/PaintProtectionFilmPackages/FFProtection.svg';
 import FullProtection from '../../assets/img/PaintProtectionFilmPackages/FCarProtection.svg';
@@ -45,11 +45,15 @@ const PaintProtectionFilmPackages = () => {
     const [cardContent, setCardContent] = useState([{
         id: 1,
         sizeCard: "mediumcard",
+        paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
         primaryText: "PARTIAL PROTECTION",
+        colorPrimaryText: "colorAccentPrimaryText",
         secondaryText: "Our Partial Protection PPF covers from 18” to 24” of your vehicle’s hood surface with an Opticle Clear Bra.",
+        secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
+        primaryTextListStyle: "mainColor",
         button: [
             {
                 id: 1,
@@ -60,6 +64,7 @@ const PaintProtectionFilmPackages = () => {
                 hover: "darkHoverWhiteBorder",
             },
         ],
+        buttonName: "PPF",
         secondaryTextList: [
             {
                 id: Math.random(),
@@ -77,16 +82,21 @@ const PaintProtectionFilmPackages = () => {
                 id: Math.random(),
                 content: "Partial front fenders"
             },
-        ]
+        ],
+        secondaryTextListStyle: "mainSecondaryTextList"
     },
     {
         id: 2,
         sizeCard: "mediumcard",
+        paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
         primaryText: "Full Front Protection",
+        colorPrimaryText: "colorAccentPrimaryText",
         secondaryText: "A special feature of our Full Front Protection PPF package is that we incorporate wrapped edges .",
+        secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
+        primaryTextListStyle: "mainColor",
         button: [
             {
                 id: 2,
@@ -97,6 +107,7 @@ const PaintProtectionFilmPackages = () => {
                 hover: "darkHoverGreenBorder",
             },
         ],
+        buttonName: "PPF",
         secondaryTextList: [
             {
                 id: Math.random(),
@@ -118,16 +129,21 @@ const PaintProtectionFilmPackages = () => {
                 id: Math.random(),
                 content: "Mirror caps"
             },
-        ]
+        ],
+        secondaryTextListStyle: "mainSecondaryTextList"
     },
     {
         id: 3,
         sizeCard: "mediumcard",
+        paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
         primaryText: "Full Car Protection",
+        colorPrimaryText: "colorAccentPrimaryText",
         secondaryText: "Whether you are looking for that perfectly invisible protective film or a custom stealth appearance created by a satin finish.",
+        secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
+        primaryTextListStyle: "mainColor",
         button: [
             {
                 id: 3,
@@ -138,12 +154,14 @@ const PaintProtectionFilmPackages = () => {
                 hover: "darkHoverGreenBorder",
             },
         ],
+        buttonName: "PPF",
         secondaryTextList: [
             {
                 id: Math.random(),
                 content: "Full car painted surfaces vehicle protection"
             },
-        ]
+        ],
+        secondaryTextListStyle: "mainSecondaryTextList"
     }
     ])
 
@@ -173,8 +191,8 @@ const PaintProtectionFilmPackages = () => {
     return (
         <div>
             <div className='wrapper-blur-data'>
-                <BlurData 
-                primaryText="Get invisible and strongprotection for your vehicle"
+                <BlurData
+                    primaryText="Get invisible and strongprotection for your vehicle"
                 />
             </div>
             <div className='wrapper-package'>
@@ -183,16 +201,22 @@ const PaintProtectionFilmPackages = () => {
                 </div>
                 <div className='wrapper-cards-ppf'>
                     {cardContent.map((item) => (
-                        <SelectCardPPF
+                        <SelectCard
                             key={item.id}
                             sizeCard={item.sizeCard}
+                            paddingCard={item.paddingCard}
                             stylePrimaryText={item.stylePrimaryText}
                             primaryText={item.primaryText}
+                            colorPrimaryText={item.colorPrimaryText}
                             secondaryText={item.secondaryText}
+                            secondaryTextStyle={item.secondaryTextStyle}
                             primaryTextList={item.primaryTextList}
+                            primaryTextListStyle={item.primaryTextListStyle}
                             secondaryTextList={item.secondaryTextList}
+                            secondaryTextListStyle={item.secondaryTextListStyle}
                             background={item.background}
                             button={item.button}
+                            buttonName={item.buttonName}
                             onButtonClick={handleButtonClick}
                         />
                     ))}
