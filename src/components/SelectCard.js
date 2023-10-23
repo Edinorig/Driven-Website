@@ -2,10 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 import style from '../css/Card.module.css'
 
-const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, secondaryText, secondaryTextStyle, button, buttonName, background, primaryTextList, primaryTextListStyle, secondaryTextList, secondaryTextListStyle, onButtonClick, bannerBg, bannerText, bannerTextStyle }) => {
+const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, secondaryText, secondaryTextStyle, button, buttonName, background, primaryTextList, primaryTextListStyle, secondaryTextList, secondaryTextListStyle, onButtonClick, bannerBg, bannerText, bannerTextStyle, img }) => {
     const [hovered, setHovered] = useState(false);
 
+
     console.log(button);
+
+    debugger
 
     const selectButtonPPF = (item) => (
         <button
@@ -24,7 +27,7 @@ const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, seco
     const selectPackagesTinting = (item) => (
         <button
             key={item.id}
-            className={`${style[item.background]} ${style[item.color]} ${style[item.size]} ${hovered ? style[item.hover] : ""}`}
+            className={`${style[item.background]}  ${style[item.size]} ${hovered ? style[item.hover] : ""}`}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
@@ -64,33 +67,37 @@ const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, seco
             <div className={`${style.wrapperPrimaryText} ${style.wrapperPrimaryText}`}>
                 <h4><p className={`${style[colorPrimaryText]}`}>{primaryText}</p></h4>
             </div>
+            {img ? <div className={style.wrapperImg}><img src={img} alt='Tinting' /></div> : null}
             {bannerBg ?
                 <div className={`${style[bannerBg]} ${style.wrapperBanner}`}>
                     <h6><p className={style[bannerTextStyle]}>{bannerText}</p></h6>
                 </div>
                 : null}
-            <div className={style.wrapperContent}>
-                <div className={style.wrapperSecondaryText}>
-                    <h6><p className={style[secondaryTextStyle]}>{secondaryText}</p></h6>
-                </div>
-                <div className={style.wrapperList}>
-                    <h5 ><p className={style[primaryTextListStyle]}>{primaryTextList}</p></h5>
-                    <div className={style.wrapperSecondaryTextList}>
-                        <ul className={style.wrappertextList}>
-                            {secondaryTextList.map((item) =>
-                                <li key={item.id} className={style[secondaryTextListStyle]}> <h6><p className={style[secondaryTextListStyle]}>{item.content}</p></h6></li>
-                            )}
-                        </ul>
+            {secondaryText ?
+                < div className={style.wrapperContent}>
+                    <div className={style.wrapperSecondaryText}>
+                        <h6><p className={style[secondaryTextStyle]}>{secondaryText}</p></h6>
                     </div>
-                </div>
-            </div>
-            {button ?
+                    <div className={style.wrapperList}>
+                        <h5 ><p className={style[primaryTextListStyle]}>{primaryTextList}</p></h5>
+                        <div className={style.wrapperSecondaryTextList}>
+                            <ul className={style.wrappertextList}>
+                                {secondaryTextList.map((item) =>
+                                    <li key={item.id} className={style[secondaryTextListStyle]}> <h6><p className={style[secondaryTextListStyle]}>{item.content}</p></h6></li>
+                                )}
+                            </ul>
+                        </div>
+                    </div>
+                </div> : null
+            }
+            {button.length > 0 ?
                 <div className={style.wrapperButton}>
                     {button.map((item) =>
                         switchButtons(item)
                     )}
-                </div> : null}
-        </div>
+                </div> : null
+            }
+        </div >
     );
 }
 

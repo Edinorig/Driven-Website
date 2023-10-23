@@ -1,0 +1,14 @@
+.wrapper-bennefit-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-bennefits-tinting-text{
+    max-width: 15rem;
+    margin: 0 0 0 1.25rem;
+}
+
+.wrapper-bennefit-card{
+    display: flex;
+    align-items: center;
+}

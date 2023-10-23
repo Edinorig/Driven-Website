@@ -7,33 +7,63 @@
     -webkit-text-fill-color: transparent;
 }
 
-.wrapper-banner{
+.wrapper-tintings-select-cards{
+    margin: 5rem 0 5rem;
+}
+.wrapper-tinting-benefits {
+    margin: 5rem 0 0 0;
+}
+
+.wrapper-banner {
     margin: 5rem -7.5rem 0 -7.5rem !important;
     background: var(--bg-medium);
 }
 
-.wrapper-tinting-banner{
+.wrapper-tinting-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper-banner-primary-text{
+.wrapper-tinting-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5rem 0 0;
+    align-items: center;
+}
+
+.wrapper-benefits-primary-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem 0 0;
 }
 
-.primary-text-tinting-packages{
+.wrapper-banner-primary-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0 0;
+}
+
+.primary-text-tinting-benefits,
+.primary-text-tinting-packages {
     margin: 0 1rem 0 0;
 }
 
-.wrapper-tinting-packages{
+.wrapper-tinting-packages {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 2.5rem 0 2.5rem;
     align-items: center;
+}
+
+.wrapper-tinting-bennefits-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8em;
+    grid-row-gap: 2em;
+    margin: 3.5rem 0 0;
 }
