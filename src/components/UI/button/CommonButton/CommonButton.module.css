@@ -1,9 +1,4 @@
 
-/* button.greyAccent:hover {
-    background: var(--bg-accent);
-    color: var(--text-accent-hovered);
-} */
-
 .greenText {
     color: var(--text-accent);
     font-family: Zen Dots;
@@ -79,6 +74,11 @@
     height: 2.5rem;
 }
 
+.mediumSize {
+    width: 15.5rem;
+    height: 2.5rem;
+}
+
 .blackMedimuSoftBackground {
     border-radius: 0.0625rem;
     border: 1px solid var(--bg-accent);
@@ -89,4 +89,10 @@
     border: 1px solid var(--bg-accent);
     background: var(--bg-accent);
     color: var(--text-accent-hovered);
+}
+
+.whiteHover{
+    border: 1px solid var(--bg-accent);
+    background: var(--bg-light);
+    color: var(--text-dark);
 }

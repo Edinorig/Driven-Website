@@ -157,7 +157,8 @@ const Tinting = () => {
   const tintingCards = [
     {
       id: 1,
-      sizeCard: "mediumcard",
+      sizeCard: "smallcard",
+      styleCards: "alighnCentre",
       paddingCard: "smallPadding",
       background: "darkBackground",
       img: windowStripTinting,
@@ -176,7 +177,8 @@ const Tinting = () => {
     },
     {
       id: 2,
-      sizeCard: "mediumcard",
+      sizeCard: "smallcard",
+      styleCards: "alighnCentre",
       paddingCard: "smallPadding",
       background: "darkBackground",
       img: fullWindshieldTinting,
@@ -195,7 +197,8 @@ const Tinting = () => {
     },
     {
       id: 3,
-      sizeCard: "mediumcard",
+      sizeCard: "smallcard",
+      styleCards: "alighnCentre",
       paddingCard: "smallPadding",
       background: "darkBackground",
       img: fullVeichleSurroundTinting,
@@ -214,7 +217,8 @@ const Tinting = () => {
     },
     {
       id: 4,
-      sizeCard: "mediumcard",
+      sizeCard: "smallcard",
+      styleCards: "alighnCentre",
       paddingCard: "smallPadding",
       background: "darkBackground",
       img: front2WindowPatchTinting,
@@ -270,6 +274,7 @@ const Tinting = () => {
           {tintingPackages.map((item) => (
             <SelectCard
               key={item.id}
+              styleCards={item.styleCards}
               sizeCard={item.sizeCard}
               paddingCard={item.paddingCard}
               primaryText={item.primaryText}
@@ -299,10 +304,11 @@ const Tinting = () => {
           {tintingCards.map((item) => (
             <SelectCard
               key={item.id}
+              styleCards={item.styleCards}
               sizeCard={item.sizeCard}
               paddingCard={item.paddingCard}
               background={item.background}
-              primaryText={item.text}
+              primaryTextImg={item.text}
               img={item.img}
               button={item.button}
               buttonName={item.buttonName}

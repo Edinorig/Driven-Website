@@ -1,14 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import style from '../css/Card.module.css'
+import CommonButton from './UI/button/CommonButton/CommonButton';
 
-const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, secondaryText, secondaryTextStyle, button, buttonName, background, primaryTextList, primaryTextListStyle, secondaryTextList, secondaryTextListStyle, onButtonClick, bannerBg, bannerText, bannerTextStyle, img }) => {
+const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, secondaryText, secondaryTextStyle, button, buttonName, background, primaryTextList, primaryTextListStyle, secondaryTextList, secondaryTextListStyle, onButtonClick, bannerBg, bannerText, bannerTextStyle, img, styleCards, primaryTextImg }) => {
     const [hovered, setHovered] = useState(false);
-
-
-    console.log(button);
-
-    debugger
 
     const selectButtonPPF = (item) => (
         <button
@@ -25,25 +21,25 @@ const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, seco
     );
 
     const selectPackagesTinting = (item) => (
-        <button
-            key={item.id}
-            className={`${style[item.background]}  ${style[item.size]} ${hovered ? style[item.hover] : ""}`}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <p>{item.text}</p>
-        </button>
+        <CommonButton
+            color="whiteText"
+            background="blackBackgroundWhiteBorder"
+            size="mediumSize"
+            hover="whiteHover"
+            text="BOOK NOW"
+            link="contact-us"
+        />
     );
 
     const selectCardTinting = (item) => (
-        <button
-            key={item.id}
-            className={`${style[item.background]} ${style[item.color]} ${style[item.size]} ${hovered ? style[item.hover] : ""}`}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <p>{item.text}</p>
-        </button>
+        <CommonButton
+            color="greenText"
+            background="blackBackground"
+            size="mediumSize"
+            hover="darkHover"
+            text="BOOK NOW"
+            link="contact-us"
+        />
     );
 
 
@@ -63,11 +59,15 @@ const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, seco
 
 
     return (
-        <div className={`${style.card} ${style[sizeCard]} ${style[paddingCard]} ${style[background]}`}>
+        <div className={`${style[styleCards]} ${style[sizeCard]} ${style[paddingCard]} ${style[background]}`}>
             <div className={`${style.wrapperPrimaryText} ${style.wrapperPrimaryText}`}>
                 <h4><p className={`${style[colorPrimaryText]}`}>{primaryText}</p></h4>
             </div>
             {img ? <div className={style.wrapperImg}><img src={img} alt='Tinting' /></div> : null}
+            {primaryTextImg ? 
+            <div className={`${style.wrapperPrimaryText} ${style.wrapperPrimaryText}`}>
+                <h4><p className={`${style[colorPrimaryText]}`}>{primaryTextImg}</p></h4>
+            </div> : null}
             {bannerBg ?
                 <div className={`${style[bannerBg]} ${style.wrapperBanner}`}>
                     <h6><p className={style[bannerTextStyle]}>{bannerText}</p></h6>

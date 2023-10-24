@@ -46,6 +46,7 @@ const PaintProtectionFilmPackages = () => {
         id: 1,
         sizeCard: "mediumcard",
         paddingCard: "smallPadding",
+        styleCards: "flexStart",
         stylePrimaryText: true,
         background: "darkBackground",
         primaryText: "PARTIAL PROTECTION",
@@ -88,6 +89,7 @@ const PaintProtectionFilmPackages = () => {
     {
         id: 2,
         sizeCard: "mediumcard",
+        styleCards: "flexStart",
         paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
@@ -135,6 +137,7 @@ const PaintProtectionFilmPackages = () => {
     {
         id: 3,
         sizeCard: "mediumcard",
+        styleCards: "flexStart",
         paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
@@ -203,6 +206,7 @@ const PaintProtectionFilmPackages = () => {
                     {cardContent.map((item) => (
                         <SelectCard
                             key={item.id}
+                            styleCards={item.styleCards}
                             sizeCard={item.sizeCard}
                             paddingCard={item.paddingCard}
                             stylePrimaryText={item.stylePrimaryText}
