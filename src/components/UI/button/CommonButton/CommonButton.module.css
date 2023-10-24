@@ -1,9 +1,4 @@
 
-button.greyAccent:hover {
-    background: var(--bg-accent);
-    color: var(--text-accent-hovered);
-}
-
 .greenText {
     color: var(--text-accent);
     font-family: Zen Dots;
@@ -43,12 +38,21 @@ button.greyAccent:hover {
     border: 1px solid var(--bg-accent);
     color: var(--bg-dark);
 }
+
 .darkHoverWhiteBorder {
     background: var(--bg-light);
     border-radius: 0.0625rem;
     border: 1px solid var(--bg-light);
     color: var(--bg-dark);
 }
+
+.whiteHoverWhiteBorder{
+    background: var(--bg-accent);
+    border-radius: 0.0625rem;
+    border: 1px solid var(--bg-light);
+    color: var(--bg-dark);
+}
+
 .darkHoverGreenBorder {
     background: var(--bg-accent);
     border-radius: 0.0625rem;
@@ -70,6 +74,11 @@ button.greyAccent:hover {
     height: 2.5rem;
 }
 
+.mediumSize {
+    width: 15.5rem;
+    height: 2.5rem;
+}
+
 .blackMedimuSoftBackground {
     border-radius: 0.0625rem;
     border: 1px solid var(--bg-accent);
@@ -80,4 +89,10 @@ button.greyAccent:hover {
     border: 1px solid var(--bg-accent);
     background: var(--bg-accent);
     color: var(--text-accent-hovered);
+}
+
+.whiteHover{
+    border: 1px solid var(--bg-accent);
+    background: var(--bg-light);
+    color: var(--text-dark);
 }

@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import './assets/font/font.css'
 import Header from './components/Header';
 import PaintProtectionFilmPackages from './pages/PaintProtectionFilmPackages/PaintProtectionFilmPackages';
+import Tinting from './pages/Tinting/Tinting';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path='/services/paint-protection-film/paint-protection-film-packages' element={<PaintProtectionFilmPackages/>} />
           <Route path='/services/paint-protection-film/cosmetic-paint-protection-film' element={<LearnMore/>} />
           <Route path='/services/ceramic-coating/ceramic-coating-packages' element={<LearnMore/>} />
-          <Route path='/services/window-tinting' element={<LearnMore/>} />
+          <Route path='/services/window-tinting' element={<Tinting/>} />
           <Route path='/services/vynil-wrap-services' element={<LearnMore/>} />
           <Route path='/services/detaling/package-detaling' element={<LearnMore/>} />
           <Route path='/services/detaling/exterior-detaling' element={<LearnMore/>} />

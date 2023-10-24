@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../css/InformationCard.module.css'
 
-const InformationCard = ({ img, primaryText, secondaryText }) => {
+const InformationCard = ({ img, primaryText, secondaryText}) => {
 
     console.log(img);
     return (
