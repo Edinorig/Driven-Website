@@ -146,27 +146,26 @@ const Form = () => {
         setDataArray(prevInputs => prevInputs.map(input =>
             input.name === name && input.typeComponent === "inputData" ? { ...input, value: value, validation: isValid } : input
         ));
-        console.log(dataArray);
+
     }
     const onChangeSelect = (e) => {
         const { name, value } = e.target;
-        console.log(value, name);
+
         let checked = value !== null || value !== false ? true : false;
-        console.log(checked);
+
         setDataArray(prevInputs => prevInputs.map(select =>
             select.name === name && select.typeComponent === "selectData" ? { ...select, value: value, validation: checked } : select
         ));
-        console.log(dataArray);
+
     }
     const onChangeSelectServices = (e) => {
         const { name, value } = e.target;
-        console.log(value, name);
+
         let checked = value !== null || value !== false ? true : false;
-        console.log(checked);
+
         setServicesInput(prevInputs => prevInputs.map(select =>
             select.name === name && select.typeComponent === "selectData" ? { ...select, value: value, validation: checked } : select
         ));
-        console.log(dataArray);
     }
 
     const validateType = (typevalidation, text) => {
@@ -190,7 +189,6 @@ const Form = () => {
     }
 
     const addServices = (e) => {
-        console.log(e.target);
         if (servicesInput.length < 2) {
             setServicesInput([...servicesInput, {
                 id: 2,
@@ -226,7 +224,6 @@ const Form = () => {
 
         servicesInput.forEach((ele) => {
             if (ele.value === null) {
-                console.log(ele);
                 setServicesInput((prevInputs) =>
                     prevInputs.map((input) =>
                         input.id === ele.id ? { ...input, validation: false } : input
@@ -235,7 +232,6 @@ const Form = () => {
             }
         });
 
-        console.log(isValidData);
 
         if (isValidData && isValidDataServices) {
             setDataArray(prevInputs =>

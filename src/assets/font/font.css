@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a ,
-input,
-select,
-textarea{
+*{
     font-family: 'Zen Dots', cursive;
     margin: 0;
     padding: 0;

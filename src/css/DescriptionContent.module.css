@@ -1,0 +1,16 @@
+.accentColor{
+    color: var(--text-accent);
+}
+
+.wrapperPrimaryText{
+    margin: 1rem 0 0 0;
+}
+
+.wrapperSecondaryText{
+    margin: 0.8rem 0 0 ;
+
+}
+
+.alighnText{
+    line-height: 248%;
+}

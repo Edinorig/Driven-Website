@@ -16,7 +16,7 @@ const SelectCard = ({ sizeCard, paddingCard, primaryText, colorPrimaryText, seco
                 onButtonClick(item.id);
             }}
         >
-            <p>{item.text}</p>
+            {item.text}
         </button>
     );
 

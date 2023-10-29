@@ -1,0 +1,28 @@
+.wrapperBanner {
+    width: 100%;
+    background: var(--bg-medium);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.wrapperContent{
+    margin: 2rem 0 2.5rem 0;
+}
+
+.contentText{
+line-height: 1.75rem; 
+text-align: center;
+}
+
+.textAccent{
+    color: var(--text-accent);
+}
+
+.textBorderLine{
+    -webkit-text-stroke: 0.1px var(--text-main);
+    -webkit-text-fill-color: transparent;
+}

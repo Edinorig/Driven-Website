@@ -15,10 +15,6 @@ export const menuItems = [
           {
             title: 'Paint Protection Film Packages',
             url: '/services/paint-protection-film/paint-protection-film-packages'
-          },
-          {
-            title: 'Cosmetic Paint Protection Film',
-            url: '/services/paint-protection-film/cosmetic-paint-protection-film'
           }
         ]
       },

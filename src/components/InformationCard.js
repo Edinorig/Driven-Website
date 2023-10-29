@@ -3,7 +3,6 @@ import style from '../css/InformationCard.module.css'
 
 const InformationCard = ({ img, primaryText, secondaryText}) => {
 
-    console.log(img);
     return (
         <div className={style.wrapperInformationCard}>
             <div className={style.informationCard}>

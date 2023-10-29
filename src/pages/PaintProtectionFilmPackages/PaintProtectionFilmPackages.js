@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BlurData from '../../components/BlurData';
 import Footer from '../../components/Footer';
-import InformationCard from '../../components/InformationCard';
+import InformationCardBanner from '../../components/InformationCardBanner';
 import './PaintProtectionFilmPackages.css';
 import SelectCard from '../../components/SelectCard';
 import PartialProtection from '../../assets/img/PaintProtectionFilmPackages/Partialrotection.svg';
@@ -11,7 +11,6 @@ import carService from '../../assets/img/PaintProtectionFilmPackages/carService.
 import carWash from '../../assets/img/PaintProtectionFilmPackages/carWash.svg'
 import carIcon from '../../assets/img/PaintProtectionFilmPackages/carIcon.svg'
 import saveMoney from '../../assets/img/PaintProtectionFilmPackages/saveMoney.svg'
-import CommonButton from '../../components/UI/button/CommonButton/CommonButton';
 
 const PaintProtectionFilmPackages = () => {
 
@@ -45,16 +44,16 @@ const PaintProtectionFilmPackages = () => {
     const [cardContent, setCardContent] = useState([{
         id: 1,
         sizeCard: "mediumcard",
-        paddingCard: "smallPadding",
+        paddingCard: "mediumPadding",
         styleCards: "flexStart",
         stylePrimaryText: true,
         background: "darkBackground",
         primaryText: "PARTIAL PROTECTION",
-        colorPrimaryText: "colorAccentPrimaryText",
+        colorPrimaryText: "accentColor",
         secondaryText: "Our Partial Protection PPF covers from 18” to 24” of your vehicle’s hood surface with an Opticle Clear Bra.",
         secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
-        primaryTextListStyle: "mainColor",
+        primaryTextListStyle: "accentColor",
         button: [
             {
                 id: 1,
@@ -62,7 +61,7 @@ const PaintProtectionFilmPackages = () => {
                 color: "greenColor",
                 size: "medimuSize",
                 text: "SELECTED",
-                hover: "darkHoverWhiteBorder",
+                hover: "darkHoverGreenBorder",
             },
         ],
         buttonName: "PPF",
@@ -88,17 +87,17 @@ const PaintProtectionFilmPackages = () => {
     },
     {
         id: 2,
-        sizeCard: "mediumcard",
+        sizeCard: "largeCard",
         styleCards: "flexStart",
-        paddingCard: "smallPadding",
+        paddingCard: "mediumPadding",
         stylePrimaryText: true,
-        background: "darkBackground",
-        primaryText: "Full Front Protection",
-        colorPrimaryText: "colorAccentPrimaryText",
+        background: "accentBackground",
+        primaryText: "FULL FRONT PROTECTION",
+        colorPrimaryText: "colorDarkPrimaryText",
         secondaryText: "A special feature of our Full Front Protection PPF package is that we incorporate wrapped edges .",
-        secondaryTextStyle: "mainColorSecondaryText",
+        secondaryTextStyle: "darkColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
-        primaryTextListStyle: "mainColor",
+        primaryTextListStyle: "darkColor",
         button: [
             {
                 id: 2,
@@ -106,7 +105,7 @@ const PaintProtectionFilmPackages = () => {
                 color: "whiteColor",
                 size: "medimuSize",
                 text: "SELECT",
-                hover: "darkHoverGreenBorder",
+                hover: "whiteHover",
             },
         ],
         buttonName: "PPF",
@@ -132,21 +131,21 @@ const PaintProtectionFilmPackages = () => {
                 content: "Mirror caps"
             },
         ],
-        secondaryTextListStyle: "mainSecondaryTextList"
+        secondaryTextListStyle: "darkSecondaryTextList"
     },
     {
         id: 3,
         sizeCard: "mediumcard",
+        paddingCard: "mediumPadding",
         styleCards: "flexStart",
-        paddingCard: "smallPadding",
         stylePrimaryText: true,
         background: "darkBackground",
-        primaryText: "Full Car Protection",
-        colorPrimaryText: "colorAccentPrimaryText",
-        secondaryText: "Whether you are looking for that perfectly invisible protective film or a custom stealth appearance created by a satin finish.",
+        primaryText: "PARTIAL PROTECTION",
+        colorPrimaryText: "accentColor",
+        secondaryText: "Our Partial Protection PPF covers from 18” to 24” of your vehicle’s hood surface with an Opticle Clear Bra.",
         secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
-        primaryTextListStyle: "mainColor",
+        primaryTextListStyle: "accentColor",
         button: [
             {
                 id: 3,
@@ -175,6 +174,8 @@ const PaintProtectionFilmPackages = () => {
     };
     const [selectedImageId, setSelectedImageId] = useState(1);
     const handleButtonClick = (id) => {
+        console.log(selectedImageId);
+        setSelectedImageId(id);
         setCardContent((prev) =>
             prev.map((item) => ({
                 ...item,
@@ -182,22 +183,19 @@ const PaintProtectionFilmPackages = () => {
                     ...button,
                     background: button.id === id ? "darkBackgroundgreenBorder" : "darkBackgroundBorderWhite",
                     color: button.id === id ? "greenColor" : "whiteColor",
-                    size: "medimuSize",
                     text: button.id === id ? "SELECTED" : "SELECT",
-                    hover: button.id === id ? "darkHoverWhiteBorder" : "darkHoverGreenBorder",
+                    hover: button.id === id ? (button.hover === "darkHoverGreenBorder" ? "darkHoverGreenBorder" : (button.hover === "whiteHover" ? "whiteHover" : "darkHoverGreenBorder")) : "whiteHover",
                 })),
             }))
         );
-        setSelectedImageId(id);
     };
+    console.log(images[selectedImageId]);
 
     return (
         <div>
-            <div className='wrapper-blur-data'>
-                <BlurData
-                    primaryText="Get invisible and strongprotection for your vehicle"
-                />
-            </div>
+            <BlurData
+                primaryText="Get invisible and strongprotection for your vehicle"
+            />
             <div className='wrapper-package'>
                 <div className='wrapper-primary-text'>
                     <h1 className='primary-text'><p>PPF PACKAGES</p></h1>
@@ -229,31 +227,9 @@ const PaintProtectionFilmPackages = () => {
                     <img src={images[selectedImageId]} alt='Car Protection' />
                 </div>
             </div>
-            <div className='wrapper-banner-card-information'>
-                <div className='wrapper-primary-text-styled-green'>
-                    <h1 className='primary-text-styled-green'><p>Why Should You Consider  PPF For Your Ride ?</p></h1>
-                </div>
-                <div className='wrapper-information-cards'>
-                    {informationCard.map((item) =>
-                        <InformationCard
-                            key={item.id}
-                            img={item.imgSrc}
-                            primaryText={item.primaryText}
-                            secondaryText={item.secondaryText}
-                        />
-                    )}
-                </div>
-                <div className='wrapper-button-information-card'>
-                    <CommonButton
-                        color="greenText"
-                        background="blackBackground"
-                        size="largeSize"
-                        hover="darkHover"
-                        text="BOOK NOW"
-                        link="contact-us"
-                    />
-                </div>
-            </div>
+            <InformationCardBanner
+                informationCard={informationCard}
+            />
             <Footer />
         </div >
     );

@@ -1,0 +1,37 @@
+.wrapperBannerCardInformation {
+    margin: 5rem -7.5rem 0 -7.5rem;
+    height: 46rem;
+    background: var(--bg-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperPrimaryTextStyledGreen {
+    padding: 3rem 0 0;
+}
+
+.primaryTextStyledGreen {
+    -webkit-text-stroke: 0.1px var(--text-accent);
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperInformationCards {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 2.3rem 0 0;
+}
+
+.wrapperButtonInformationCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin: 4rem 0 0 ;
+}

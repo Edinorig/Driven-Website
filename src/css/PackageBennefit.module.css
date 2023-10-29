@@ -1,0 +1,13 @@
+.wrapperPackageBennefit{
+    margin: 4rem 0 4rem;
+    width: 60%;
+}
+
+.wrapperButton,
+.wrapperDescription{
+    margin: 2.1rem 0 0;
+}
+
+.contentText{
+    line-height: 2.1875rem;
+}

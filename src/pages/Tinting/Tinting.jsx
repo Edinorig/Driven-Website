@@ -239,12 +239,10 @@ const Tinting = () => {
 
   return (
     <div>
-      <div className="wrapper-blur-data">
-        <BlurData
-          primaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
-          secondaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
-        />
-      </div>
+      <BlurData
+        primaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
+        secondaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
+      />
       <section className="wrapper-tinting-benefits">
         <h4 className="wrapper-benefits-primary-text">
           <p className="primary-text-tinting-benefits">THE</p>

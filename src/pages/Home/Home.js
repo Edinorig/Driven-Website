@@ -39,10 +39,10 @@ const Home = () => {
             </div>
             <div className='wrapper-services'>
                 <div className='wrapper-primary-text-services'>
-                    <p className='primary-text-slash'>///</p>
+                    <p className='primary-text-slash'>"///" </p>
                     <p className='primary-text-services'>SERVICES</p>
                 </div>
-                <img src={servicesImg} alt="" />
+                <img src={servicesImg} alt="d" />
                 <div className='wrapper-btn-services'>
                     <CommonButton
                         color="greenText"
