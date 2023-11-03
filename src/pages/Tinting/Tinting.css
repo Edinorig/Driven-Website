@@ -8,14 +8,14 @@
 }
 
 .wrapper-tintings-select-cards{
-    margin: 5rem 0 5rem;
+    margin: 5vw 0 5vw;
 }
 .wrapper-tinting-benefits {
-    margin: 5rem 0 0 0;
+    margin: 5vw 0 0 0;
 }
 
 .wrapper-banner {
-    margin: 5rem -7.5rem 0 -7.5rem !important;
+    margin: 5vw -7.5vw 0 -7.5vw !important;
     background: var(--bg-medium);
 }
 

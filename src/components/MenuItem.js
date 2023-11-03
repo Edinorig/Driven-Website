@@ -3,7 +3,7 @@ import '../css/MenuItems.css'
 import { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({ items, depthLevel, mobileMenu }) => {
   const [dropdown, setDropdown] = useState(false);
   let ref = useRef();
   useEffect(() => {
@@ -53,7 +53,9 @@ const MenuItems = ({ items, depthLevel }) => {
           <Dropdown
             submenus={items.submenu}
             dropdown={dropdown}
-            depthLevel={depthLevel} />
+            depthLevel={depthLevel}
+            mobileMenu={mobileMenu}
+            />
         </>
       ) : (
         items.className === "headerMenu" ?

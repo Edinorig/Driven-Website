@@ -30,19 +30,19 @@ const Home = () => {
             </div>
             <div className='banner-diller'>
                 <div className='wrapper-diller-img'>
-                    <img src={dillerImg1} alt="" />
-                    <img src={dillerImg2} alt="" />
-                    <img src={dillerImg3} alt="" />
-                    <img src={dillerImg4} alt="" />
-                    <img src={dillerImg5} alt="" />
+                    <img src={dillerImg1} alt="" className='diller-icon' />
+                    <img src={dillerImg2} alt="" className='diller-icon' />
+                    <img src={dillerImg3} alt="" className='diller-icon' />
+                    <img src={dillerImg4} alt="" className='diller-icon' />
+                    <img src={dillerImg5} alt="" className='diller-icon' />
                 </div>
             </div>
             <div className='wrapper-services'>
                 <div className='wrapper-primary-text-services'>
-                    <p className='primary-text-slash'>"///" </p>
+                    <p className='primary-text-slash'>///</p>
                     <p className='primary-text-services'>SERVICES</p>
                 </div>
-                <img src={servicesImg} alt="d" />
+                <img src={servicesImg} alt="d" className='icon-Services' />
                 <div className='wrapper-btn-services'>
                     <CommonButton
                         color="greenText"

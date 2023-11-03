@@ -1,16 +1,13 @@
 footer {
-    width: 100vw;
-    height: 26rem;
-
+    height: 26vw;
     position: sticky;
-
-    margin: 0 -7.5rem 0 -7.5rem !important;
+    margin: 0 -7.5vw 0 -7.5vw !important;
 }
 
 .wrapper-footer-information {
-    height: 100%;
+    height: auto;
 
-    padding: 1.3rem 7rem 0 7rem;
+    padding: 1.3vw 7.5vw 0 7.5vw;
 
     display: flex;
     flex-direction: column;
@@ -26,7 +23,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 1.4rem 0 0 0;
+    padding: 1.4vw 0 0 0;
 }
 
 .wrapper-primary-text{
@@ -55,7 +52,7 @@ footer {
 }
 
 .logo {
-    height: 1.8rem;
+    height: 1.8vw;
     cursor: pointer;
 }
 

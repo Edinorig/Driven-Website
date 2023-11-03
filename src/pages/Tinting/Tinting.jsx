@@ -26,7 +26,7 @@ const Tinting = () => {
       bannerBg: "bannerAccent",
       bannerText: "GOOD VALUE OPTION",
       secondaryText:
-        "When it comes to appearance and affordability, color stable dyed window tint is your top choice.",
+        "For a perfect blend of style and cost-effectiveness, opt for Color Stable Dyed Window Tint",
       secondaryTextStyle: "mainColorSecondaryText",
       background: "darkBackground",
       primaryTextList: "Key Features:",
@@ -34,11 +34,11 @@ const Tinting = () => {
       secondaryTextList: [
         {
           id: 1,
-          content: "Moderate glare reduction",
+          content: "Moderate glare reduction for improved visibility",
         },
         {
           id: 2,
-          content: "Improve vehicle appearance without fading",
+          content: "Enhance vehicle appearance without the worry of fading",
         },
       ],
       secondaryTextListStyle: "mainSecondaryTextList",
@@ -51,9 +51,9 @@ const Tinting = () => {
       primaryText: "Two-layer Heat Rejecting Ceramic Tint",
       colorPrimaryText: "colorDarkPrimaryText",
       bannerBg: "bannerDark",
-      bannerText: "BETTER NANO-CERAMIC",
+      bannerText: "BEST ULTIMATE PERFORMANCE",
       secondaryText:
-        "Designed for maximum UV protection, a dual-layer ceramic window tint can keep your vehicle cooler & more comfortable wherever you're headed.",
+        "Crafted for ultimate UV protection, dual-layer ceramic window tint ensures a cooler, more comfortable ride wherever you go",
       secondaryTextStyle: "darkColorSecondaryText",
       background: "accentBackground",
       primaryTextList: "Key Features:",
@@ -62,16 +62,16 @@ const Tinting = () => {
         {
           id: 1,
           content:
-            "Ultra low heat transmission to interior of vehicle resulting in cool interiors",
+            "Ultra-low heat transmission creates cool and comfortable vehicle interiors",
         },
         {
           id: 2,
           content:
-            "The best available UV and heat rejection. Use a light shade of tint on your windshield for the best possible result without compromising your vision",
+            "Opt for the best UV and heat rejection with a light windshield tint, ensuring optimal results without compromising your vision",
         },
         {
           id: 3,
-          content: "Won't block cellular signals like metalized films do",
+          content: "Preserves cellular signals, unlike metalized films that can disrupt connectivity",
         },
       ],
       secondaryTextListStyle: "darkSecondaryTextList",
@@ -96,7 +96,7 @@ const Tinting = () => {
       bannerBg: "bannerAccent",
       bannerText: "BETTER NANO-CERAMIC",
       secondaryText:
-        "Designed for maximum UV protection, this window tint can keep your vehicle cooler & more comfortable wherever you're headed.",
+        "Crafted for peak UV protection, this window tint ensures a cooler, more comfortable ride wherever you go",
       secondaryTextStyle: "mainColorSecondaryText",
       background: "darkBackground",
       primaryTextList: "Key Features:",
@@ -104,11 +104,11 @@ const Tinting = () => {
       secondaryTextList: [
         {
           id: 1,
-          content: "Offer UV protection equalling SPF 1,000",
+          content: "Offers SPF 1000-level UV protection.",
         },
         {
           id: 2,
-          content: "Won't block cellular signals like metalized films do",
+          content: "Preserves cellular signals, unlike metalized films.",
         },
         {
           id: 3,
@@ -125,32 +125,32 @@ const Tinting = () => {
     {
       id: 1,
       img: icontTintingBennefits1,
-      text: "Blocks up to 98% of Solar Infrared Heat",
+      text: "Blocks 98% solar heat for ultimate coolness.",
     },
     {
       id: 2,
       img: icontTintingBennefits2,
-      text: "Reduces Sun Glare for Safer Driving",
+      text: "Reduces glare, enhancing drive safety.",
     },
     {
       id: 3,
       img: icontTintingBennefits3,
-      text: "Offers Greater Privacy",
+      text: "Adds privacy for peace of mind.",
     },
     {
       id: 4,
       img: icontTintingBennefits4,
-      text: "Protects passengers from harmful UV Rays",
+      text: "Shields from harmful UV rays, prioritizing well-being.",
     },
     {
       id: 5,
       img: icontTintingBennefits5,
-      text: "Improves Your Vehicle's Appearance",
+      text: "Enhances vehicle appeal for a stylish look.",
     },
     {
       id: 6,
       img: icontTintingBennefits6,
-      text: "Protects Your Vehicles Interior",
+      text: "Preserves interior, ensuring longevity and beauty.",
     },
   ];
 
@@ -239,18 +239,15 @@ const Tinting = () => {
 
   return (
     <div>
-      <BlurData
-        primaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
-        secondaryText="Specialized Window Tint Film Installation Located In Chicago, IL"
-      />
+      <BlurData primaryText="Be invisible and have strong security for your car." />
       <section className="wrapper-tinting-benefits">
         <h4 className="wrapper-benefits-primary-text">
-          <p className="primary-text-tinting-benefits">THE</p>
+          <p className="primary-text-tinting-benefits">DISCOVER</p>
           <span className="primary-styled-text-green primary-text-tinting-benefits">
-            TOP REASONS
+            THE MAIN REASONS
           </span>
           <p className="primary-text-tinting-benefits">
-            TO GET YOUR WINDOWS TINTED AT CHICAGO AUTO PROS
+            TO TINT TOUR WINDOWS AT DRIVEN CUSTOMS
           </p>
         </h4>
         <div className="wrapper-tinting-bennefits-card">
@@ -261,11 +258,12 @@ const Tinting = () => {
       </section>
       <section className="wrapper-tinting-banner wrapper-banner">
         <h4 className="wrapper-banner-primary-text">
+          <span className="primary-styled-text-border-white">DISCOVER</span>
           <p className="primary-styled-text-green primary-text-tinting-packages">
-            THREE TYPES
+            THREE PERFORMANCE
           </p>
           <span className="primary-styled-text-border-white">
-            OF PERFORMANCE WINDOW TINT
+            WINDOW TINT OPTIONS
           </span>
         </h4>
         <div className="wrapper-tinting-packages">
@@ -295,7 +293,7 @@ const Tinting = () => {
       <section className="wrapper-tintings-select-cards">
         <h4 className="wrapper-benefits-primary-text">
           <p className="primary-text-tinting-cards">
-            Numerous Options for Tinting Available at Chicago Auto Pros
+          Driven Customs offers a variety of tinting options to choose from.
           </p>
         </h4>
         <div className="wrapper-tinting-cards">

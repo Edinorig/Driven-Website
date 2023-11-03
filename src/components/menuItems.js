@@ -10,7 +10,7 @@ export const menuItems = [
     className:'headerMenu',
     submenu: [
       {
-        title: 'Paint protection film',
+        title: 'Paint Protection Film',
         submenu: [
           {
             title: 'Paint Protection Film Packages',
@@ -32,7 +32,7 @@ export const menuItems = [
         url: '/services/window-tinting',
       },
       {
-        title: 'Vynil wrap services',
+        title: 'Vynil Wrap Services',
         url: '/services/vynil-wrap-services',
       },
       {
@@ -53,8 +53,12 @@ export const menuItems = [
         ]
       },
       {
-        title: 'Paintless dent repair ',
+        title: 'Paintless Dent Repair ',
         url: '/services/paintless-dent-repair',
+      },
+      {
+        title: 'Powder Coating ',
+        url: '/services/powder-coating',
       },
     ],
   },

@@ -20,10 +20,10 @@ const Footer = () => {
                     <div className='circle-for-social'><img src={linkedInIcon} alt="" /></div>
                 </div>
                 <div className='wrapper-primary-text'>
-                    <h2><p className='primary-text-footer'>We Make Your Car Look Beautiful</p></h2>
+                    <h2><p className='primary-text-footer'>We enhance the beauty of your car</p></h2>
                 </div>
                 <div className='wrapper-secondary-text'>
-                    <h6><p className='secondary-text-footer'>Founded with an unquenchable desire for automotive perfection, Chicago Auto Pros is a leader in paint protection efforts and aesthetic vehicle detailing services in Chicago, Illinois. When you bring your automobile to our Chicago-based detailing shop.</p></h6>
+                    <h6><p className='secondary-text-footer'>At Driven Customs, we're passionate about making cars look their best. Based in Chicago, Illinois, we specialize in paint protection and vehicle detailing. Bring your car to us for top-notch service and a shiny, like-new appearance</p></h6>
                 </div>
                 <div className='wrapper-shop-contac'>
                     <h6><p className='address-information'>3208 W Lake Ave Glenview, IL 60026</p></h6>

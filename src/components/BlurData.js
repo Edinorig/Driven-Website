@@ -1,9 +1,8 @@
 import React from 'react';
 import '../css/BlurData.css'
 import CommonButton from './UI/button/CommonButton/CommonButton';
-import tesla from '../assets/img/icons/tesla.svg'
 
-const BlurData = ({ primaryText, secondaryText }) => {
+const BlurData = ({ primaryText, secondaryText, img }) => {
     return (
         <div className='wrapper-blur'>
             <div className='wrapper-content'>
@@ -22,7 +21,7 @@ const BlurData = ({ primaryText, secondaryText }) => {
                             />
                         </div>
                         <div className='wrapper-content-img'>
-                            <img src={tesla} alt='Car styling' />
+                            <img src={img} alt='Car styling' />
                         </div>
                     </div>
                 </div>

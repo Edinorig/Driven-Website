@@ -54,7 +54,7 @@ const CommonButton = ({
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        {text}
+        <h5><p>{text}</p></h5>
       </button>
     </Link>
   );

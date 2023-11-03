@@ -3,16 +3,42 @@
     cursor: pointer;
 }
 
-header{
+header {
     width: auto;
-    height: 4.6rem;
-
-    padding: 0 3.1rem;
-    margin: 0 -7.5rem !important;
-
+    height: 4.6vw;
+    padding: 0 2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: #1E1E1E;
+
+    margin: 0 -7.5vw 0 -7.5vw;
+}
+
+.burger-menu{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 1rem;
+    }
+    .wrapper-butn{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 1.5rem;
+    }
+
+    header {
+        height: 3.5rem;
+    }
 }

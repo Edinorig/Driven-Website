@@ -4,12 +4,11 @@
     background: linear-gradient(50deg, var(--bg-accent), var(--bg-medium));
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
-
-    margin: 0 -7.5rem 0 -7.5rem;
+    margin: 0 -7.5vw 0 -7.5vw;
 }
 
 .wrapper-content {
-    padding: 7rem 10rem 0 10rem;
+    padding: 4rem 10rem 0 10rem;
     height: 28rem;
     display: flex;
     align-items: flex-start;

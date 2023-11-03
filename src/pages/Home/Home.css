@@ -1,31 +1,35 @@
 .wrapper-information {
-    margin: 4.1rem 0 0 0;
+    margin: 4.1vw 0 0 0;
 }
 
 .primary-text-information {
-    font-size: 6.875rem;
+    font-size: 6.875vw;
     color: var(--text-accent);
 }
 
 .secondary-text-information {
     color: var(--text-main);
-    margin: 2.5rem 0 0 0;
-    width: 33rem;
-    height: 1.75rem;
+    margin: 2.5vw 0 0 0;
 }
 
 .wrapper-position {
     position: relative;
 }
+.icon-Services{
+    width: 90vw;
+}
+.diller-icon{
+    max-height: 4vw;
+}
 
 .wrapper-btn,
 .wrapper-button {
-    margin-top: 0.8rem;
+    margin-top: 0.8vw;
 }
 
 .lambo-photo {
     position: absolute;
-    top: 9.5rem;
+    top: 11.5vw;
     right: 0;
 
     width: 50%;
@@ -33,13 +37,13 @@
 
 .banner-diller {
     width: 100vw;
-    height: 4.5rem;
+    height: 6.5vw;
     background: var(--bg-medium);
-    margin: 12rem -7.5rem 0 -7.5rem !important;
+    margin: 12vw -7.5vw 0 -7.5vw !important;
 }
 
 .wrapper-diller-img {
-    width: 70%;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +56,7 @@
 }
 
 .wrapper-services {
-    margin: 7rem 0 0 0;
+    margin: 7vw 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -68,20 +72,19 @@
 }
 
 .primary-text-services {
-    font-size: 6.875rem;
+    font-size: 6.875vw;
     color: var(--text-accent);
     -webkit-text-stroke: 1px var(--text-accent);
     -webkit-text-fill-color: transparent;
 }
 
 .primary-text-slash {
-    font-size: 5.3rem;
+    font-size: 5.3vw;
     color: var(--text-accent);
     -webkit-text-stroke: 1px var(--text-accent);
     -webkit-text-fill-color: transparent;
     margin: 0 3.1rem 0.8rem 0;
 }
-
 .wrapper-btn-services {
     display: flex;
     justify-content: center;
@@ -89,14 +92,14 @@
     margin: 3.5rem 0 0 0;
 }
 .wrapper-btn-banner-why-us{
-    margin: 4.5rem 0 0 0;
+    margin: 4.5vw 0 4.5vw 0;
 }
 
 .banner-why-us {
     width: auto;
-    height: 25rem;
+    min-height: 25vw;
     background: var(--bg-medium);
-    margin: 7rem -7.5rem 0 -7.5rem !important;
+    margin: 7vw -7.5vw 0 -7.5vw !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,23 +107,33 @@
 
 .primary-text-why-us {
     color: var(--text-main);
-    margin: 2.1rem 0 0 0;
+    margin: 2.1vw 0 0 0;
 }
 
 .primary-medumi-text-why-us {
     -webkit-text-stroke: 0.1px var(--text-main);
     -webkit-text-fill-color: transparent;
-    margin: 2.6rem 0 0 0;
+    margin: 2.6vw 0 0 0;
 }
 
 .secondary-text-why-us {
-    width: 60rem;
+    max-width: 60vw;
     color: var(--text-main);
-    margin: 3rem 0 0 0;
+    margin: 3vw 0 0 0;
 }
 
 .wrapper-text-why-us {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (max-width: 1290px) {
+    .banner-diller {
+        width: 100vw;
+    }
+    .wrapper-diller-img{
+        width: 90vw;
+    }
 }

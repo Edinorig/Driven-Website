@@ -94,7 +94,7 @@ const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
           </div>
         </div>
       </div>
-      {imgBg ? (
+              {imgBg ? (
         <div className={style.wrapperImg}>
           <img src={imgBg} alt="se" />
         </div>
