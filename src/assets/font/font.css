@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
-*{
+* {
     font-family: 'Zen Dots', cursive;
     margin: 0;
     padding: 0;
@@ -9,20 +9,41 @@
 
 textarea,
 input,
-select{
+select {
     font-size: 100%;
     box-sizing: border-box;
 }
 
-h1 {font-size: 2.1vw}
+h1 {
+    font-size: 2.1rem
+}
 
-h2 {font-size: 1.8vw;}
+h2 {
+    font-size: 1.8rem;
+}
 
-h3 {font-size: 1.5vw;}
+h3 {
+    font-size: 1.5rem;
+}
 
-h4 {font-size: 1.3vw;}
+h4 {
+    font-size: 1.3rem;
+}
 
-h5 {font-size: 1.1vw;}
+h5 {
+    font-size: 1.1rem;
+}
 
 
-h6 {font-size: 0.9vw;}
+h6 {
+    font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    width: fit-content;
+}

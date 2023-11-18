@@ -14,6 +14,7 @@ import windowStripTinting from "../../assets/img/TintingPage/windowStripTinting.
 import fullWindshieldTinting from "../../assets/img/TintingPage/fullWindshieldTinting.svg";
 import fullVeichleSurroundTinting from "../../assets/img/TintingPage/fullVeichleSurroundTinting.svg";
 import front2WindowPatchTinting from "../../assets/img/TintingPage/front2WindowPatchTinting.svg";
+import tesla from '../../assets/img/icons/tesla.svg'
 
 const Tinting = () => {
   const tintingPackages = [
@@ -26,7 +27,7 @@ const Tinting = () => {
       bannerBg: "bannerAccent",
       bannerText: "GOOD VALUE OPTION",
       secondaryText:
-        "For a perfect blend of style and cost-effectiveness, opt for Color Stable Dyed Window Tint",
+        "Choose Color Stable Dyed Window Tint for a stylish and budget-friendly option.",
       secondaryTextStyle: "mainColorSecondaryText",
       background: "darkBackground",
       primaryTextList: "Key Features:",
@@ -34,11 +35,11 @@ const Tinting = () => {
       secondaryTextList: [
         {
           id: 1,
-          content: "Moderate glare reduction for improved visibility",
+          content: "Moderate glare reduction for enhanced visibility.",
         },
         {
           id: 2,
-          content: "Enhance vehicle appearance without the worry of fading",
+          content: "Elevate your vehicle's look without fearing fading.",
         },
       ],
       secondaryTextListStyle: "mainSecondaryTextList",
@@ -53,7 +54,7 @@ const Tinting = () => {
       bannerBg: "bannerDark",
       bannerText: "BEST ULTIMATE PERFORMANCE",
       secondaryText:
-        "Crafted for ultimate UV protection, dual-layer ceramic window tint ensures a cooler, more comfortable ride wherever you go",
+        "Designed for optimal UV protection, dual-layer ceramic window tint guarantees a cooler, comfortable ride wherever you travel.",
       secondaryTextStyle: "darkColorSecondaryText",
       background: "accentBackground",
       primaryTextList: "Key Features:",
@@ -62,16 +63,16 @@ const Tinting = () => {
         {
           id: 1,
           content:
-            "Ultra-low heat transmission creates cool and comfortable vehicle interiors",
+            "Ultra-low heat transmission ensures cool and comfortable vehicle interiors.",
         },
         {
           id: 2,
           content:
-            "Opt for the best UV and heat rejection with a light windshield tint, ensuring optimal results without compromising your vision",
+            "Choose the finest UV and heat rejection with a light windshield tint, ensuring optimal results without compromising your vision.",
         },
         {
           id: 3,
-          content: "Preserves cellular signals, unlike metalized films that can disrupt connectivity",
+          content: "Preserves cellular signals, in contrast to metalized films that can disrupt connectivity.",
         },
       ],
       secondaryTextListStyle: "darkSecondaryTextList",
@@ -96,7 +97,7 @@ const Tinting = () => {
       bannerBg: "bannerAccent",
       bannerText: "BETTER NANO-CERAMIC",
       secondaryText:
-        "Crafted for peak UV protection, this window tint ensures a cooler, more comfortable ride wherever you go",
+        "Engineered for superior UV protection, this window tint guarantees a cooler, more comfortable ride wherever you travel.",
       secondaryTextStyle: "mainColorSecondaryText",
       background: "darkBackground",
       primaryTextList: "Key Features:",
@@ -104,16 +105,16 @@ const Tinting = () => {
       secondaryTextList: [
         {
           id: 1,
-          content: "Offers SPF 1000-level UV protection.",
+          content: "Provides SPF 1000-level UV protection.",
         },
         {
           id: 2,
-          content: "Preserves cellular signals, unlike metalized films.",
+          content: "Safeguards cellular signals, unlike metalized films.",
         },
         {
           id: 3,
           content:
-            "60%+ of solar heat and UV rejection for large reduction in cabin temperature",
+            "Blocks over 60% of solar heat and UV rays, significantly lowering cabin temperature.",
         },
       ],
       secondaryTextListStyle: "mainSecondaryTextList",
@@ -125,32 +126,32 @@ const Tinting = () => {
     {
       id: 1,
       img: icontTintingBennefits1,
-      text: "Blocks 98% solar heat for ultimate coolness.",
+      text: "Blocks 98% of solar heat for the utmost coolness.",
     },
     {
       id: 2,
       img: icontTintingBennefits2,
-      text: "Reduces glare, enhancing drive safety.",
+      text: "Reduces glare, improving driving safety.",
     },
     {
       id: 3,
       img: icontTintingBennefits3,
-      text: "Adds privacy for peace of mind.",
+      text: "Ensures privacy, providing peace of mind.",
     },
     {
       id: 4,
       img: icontTintingBennefits4,
-      text: "Shields from harmful UV rays, prioritizing well-being.",
+      text: "Protects from harmful UV rays, prioritizing well-being.",
     },
     {
       id: 5,
       img: icontTintingBennefits5,
-      text: "Enhances vehicle appeal for a stylish look.",
+      text: "Elevates vehicle aesthetics for a stylish appearance.",
     },
     {
       id: 6,
       img: icontTintingBennefits6,
-      text: "Preserves interior, ensuring longevity and beauty.",
+      text: "Maintains interior, ensuring durability and beauty.",
     },
   ];
 
@@ -239,16 +240,18 @@ const Tinting = () => {
 
   return (
     <div>
-      <BlurData primaryText="Be invisible and have strong security for your car." />
+      <BlurData primaryText="Ensure invisibility and robust security for your car" img={tesla}/>
       <section className="wrapper-tinting-benefits">
         <h4 className="wrapper-benefits-primary-text">
-          <p className="primary-text-tinting-benefits">DISCOVER</p>
+          {/* <p className="primary-text-tinting-benefits">DISCOVER</p> */}
+          DISCOVER
           <span className="primary-styled-text-green primary-text-tinting-benefits">
             THE MAIN REASONS
           </span>
-          <p className="primary-text-tinting-benefits">
+          TO TINT TOUR WINDOWS AT DRIVEN CUSTOMS
+          {/* <p className="primary-text-tinting-benefits">
             TO TINT TOUR WINDOWS AT DRIVEN CUSTOMS
-          </p>
+          </p> */}
         </h4>
         <div className="wrapper-tinting-bennefits-card">
           {tintingBennefitsCard.map((item) => (
@@ -259,9 +262,10 @@ const Tinting = () => {
       <section className="wrapper-tinting-banner wrapper-banner">
         <h4 className="wrapper-banner-primary-text">
           <span className="primary-styled-text-border-white">DISCOVER</span>
-          <p className="primary-styled-text-green primary-text-tinting-packages">
+          <span className="primary-styled-text-green primary-styled-text-select-card">THREE PERFORMANCE</span>
+          {/* <p className="primary-styled-text-green primary-text-tinting-packages">
             THREE PERFORMANCE
-          </p>
+          </p> */}
           <span className="primary-styled-text-border-white">
             WINDOW TINT OPTIONS
           </span>

@@ -11,3 +11,14 @@
 .contentText{
     line-height: 2.1875rem;
 }
+
+.accentColor{
+    color: var(--text-accent);
+}
+
+@media (max-width: 1290px) {
+    .wrapperPackageBennefit{
+        width: 100%;
+    }
+
+}

@@ -61,6 +61,37 @@ ul.hidden-menus.menu-items>h4>a {
 
 .leftSide{
     position: absolute;
-    left: -123% !important;
+    left: -4.35em !important;
     top: 0;
+}
+
+@media (max-width: 1290px) {
+    .dropdown .dropdown-submenu {
+        position: unset;
+    }
+    .dropdown {
+        position: unset;
+        width: 56vw;
+        list-style: none;
+        background-color: transparent;
+    }
+    ul > div.wrapper-menu-Items > li.menu-items > div.menu-items
+    {
+        background: transparent;
+    }
+
+    li .menu-items a {
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    li.menu-items > div.menu-items > h6{
+        width: 100%;
+    }
+    
+    div > nav > ul > div.menu-items > ul.leftSide.dropdown,
+    li.menu-items > div.menu-items > ul.dropdown.dropdown-submenu.leftSide>div.wrapper-menu-Items{
+        margin: 0 1rem 0 0;
+    }
+
 }

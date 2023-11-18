@@ -21,16 +21,26 @@
 }
 
 .wrapper-cards-ppf {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    column-gap: 2vw;
     align-items: center;
 }
 
 .wrapper-img-ppf {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
 
     margin: 4rem 0 0;
+}
+
+.selectCard-car{
+    width: 100%;
+}
+
+@media (max-width: 1290px) {
+    .wrapper-cards-ppf{
+        width: 100vw;
+        overflow-x: scroll;
+    }
 }

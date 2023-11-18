@@ -9,30 +9,27 @@ import carWash from "../../assets/img/PaintProtectionFilmPackages/carWash.svg";
 import carIcon from "../../assets/img/PaintProtectionFilmPackages/carIcon.svg";
 import saveMoney from "../../assets/img/PaintProtectionFilmPackages/saveMoney.svg";
 import InformationCardBanner from "../../components/InformationCardBanner";
-import ferrari from "../../assets/img/ferrariBg.svg"
+import lamborghiniUrus from '../../assets/img/icons/lamborghiniUrus.svg'
 
 const PaintlessDentRepair = () => {
       const contentInformation = [
         {
           id: 1,
-          title: "DIVEN CUSTOMS - Paintless Dent Repair",
-          subTitle:
-            "All prices are starting at and are dependent upon vehicle size and inspection",
-          turnaround: "1 DAY",
+          turnaround: "HOURS TO 1 DAY",
           content: [
             {
               id: 1,
               secondaryText:
-                "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
+                "Even if your vehicle has suffered damage beyond what our exterior detailing and paint correction services can address, it doesn't have to be a lost cause. With our Paintless Dent Repair package, Driven Customs employs an eco-friendly repair method to restore your vehicle's body to its original factory-like condition. This process takes significantly less time and costs a fraction of what traditional auto body repair shops charge.Our package is designed to eliminate dings, dents, body creases, and hail damage. Visit our Chicago, Illinois vehicle detailing shop today for an assessment and a competitive price quote for your vehicle!",
             },
           ],
           packagePriceCard: [
             {
               id: 1,
               color: "mainColor",
-              primaryText: "Cars",
-              price: "$1,164",
-              backgroundCard: "backgroundDark",
+              primaryText: "STARTING AT",
+              price: "$125",
+              backgroundCard: "backgroundAccent",
             }
           ],
         },
@@ -44,7 +41,7 @@ const PaintlessDentRepair = () => {
           imgSrc: carService,
           primaryText: "Self-Healing Vehicle Exterior Surface Security",
           secondaryText:
-            "Of all the reasons that vehicle owners bring their cars, trucks, and otherwise to our paint protection film installation team here at Chicago Auto Pros, the most common one is peace of mind. With a clear bra, you can drive freely without flinching every single time you hear a rock ricochet against your door or worrying that your finish will be scratched when parking in a busy lot.",
+            "Of all the reasons that vehicle owners bring their cars, trucks, and otherwise to our paint protection film installation team here at Driven Customs, the most common one is peace of mind. With a clear bra, you can drive freely without flinching every single time you hear a rock ricochet against your door or worrying that your finish will be scratched when parking in a busy lot.",
         },
         {
           id: 2,
@@ -68,33 +65,35 @@ const PaintlessDentRepair = () => {
             "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish.",
         },
       ];
+
+      const titlePackage = "Driven Customs - Paintless Dent Repair Package";
       return (
         <div>
           <BlurData
-            primaryText="Chicago's Top-Tier Vehicle Detailing Packages"
-            secondaryText="INTERIOR AND EXTERIOR VEHICLE DETAILING PACKAGES COMBINED"
+            primaryText="Precision Paintless Dent Repair Services in Chicago, IL by Driven Customs"
+            secondaryText="When Dent Disasters Strike, Count on Driven Customs to Restore Your Vehicle's Flawless Appearance"
+            img={lamborghiniUrus}
           />
           <Package 
+          title={titlePackage}
           contentInformation={contentInformation} 
-          imgBg={ferrari}
+          imgBg={lamborghiniUrus}
           />
           <div className="wrapper-banner">
             <Banner
-              content="Why settle for vehicle perfection halfway? Chicago Auto Pros offers package detailing services that eliminate the need to choose between interior and exterior care. Enjoy affordable rates and the same comprehensive quality found in our individual interior and exterior detailing packages, ensuring your vehicle receives a top-to-bottom clean.
-        
-                Our two combination detailing packages were designed with the diverse range of vehicles we encounter in mind. This means fair pricing that considers your specific vehicle size, while still delivering equally high-quality interior and exterior detailing services.
-                
-                Let Chicago Auto Pros' team of automotive enthusiasts assist you in selecting the ideal combination detailing package that perfectly suits your needs. Complete our FREE quick quote form for an accurate price estimate, with a reminder that we'll assess your vehicle's condition upon arrival for your detailing appointment."
-              accentText="The Best "
-              textBorderLine="vehicle Detailing Comes In Pairs"
+              content="If minor surface defects are bothering you, we understand that fender benders creating dents or divots in your vehicle’s exterior bodywork can be incredibly frustrating. But rest assured, everything will be just fine - our Paintless Dent Repair package is here to resolve your issue effectively.We employ proven techniques that are gentle on the paintwork and surrounding areas, using specialized tools to gently pop out the dent from behind the affected surface. Your car will leave our Chicago, Illinois shop looking as if nothing ever happened!If your vehicle has minor dings, dents, or surface creases that haven't damaged the paintwork or body integrity, our paintless dent repair service at Driven Customs will do the trick! Contact us for more information, and after a physical evaluation, we will provide you with an immediate quote."
+
+              accentText="Don't Stress "
+              textBorderLine=" About Repainting Your Car - Trust Driven Customs for Expert Solutions!"
             />
           </div>
           <PackageBennefit
-            title="A More Cost-Effective Way To Completely Clean Your Ride"
-            content="Perhaps the most notable reason that our detailing team here at Chicago Auto Pros have created the option for package detailing is to help bring cost-effective, complete vehicle detailing to all in the Chicago area. Without the ability to select options that take care of both the interior and exterior of a vehicle, many are forced to choose one or the other. This leaves their ride with lackluster results and not nearly the same value they would have had they had both areas detailed adequately.
-              Our goal at Chicago Auto Pros is to not leave customers between a rock and a hard place and instead work WITH them to help them achieve the best aesthetic and value possible for their car, truck, SUV, or motorcycle. We collaborate with our customers, and have found this effort to be immensely beneficial both for their satisfaction and in fulfilling our mission of vehicle detailing excellence daily.
-              Contact our vehicle detailing crew today to learn more about our two combination vehicle detailing packages, and dont forget to let us know if you have any special requests at the time of your appointment - we will be sure to fulfill them."
+            title="What Issues Can Be Addressed by Paintless Dent Repair?"
+            content="Our team at Driven Customs offers both Paintless Dent Repair and paint correction services, each serving distinct purposes for our customers.Paint correction primarily focuses on enhancing an automobile's finish gloss through polishing, removing defects, stains, and surface abrasions. In contrast, Paintless Dent Repair is a comprehensive process employed after a damaging impact or dent that hasn't compromised the vehicle's integrity.Importantly, these two services complement each other. After repairing a dent, it's often necessary to correct the paintwork around the affected area, ensuring seamless blending with the surrounding surfaces. At Driven Customs, we prioritize the integration of both procedures for a thorough vehicle restoration experience."
           />
+                {/**
+        @todo: ASK DIMA IF WEE NEED THIS COMPONENT
+      **/}
           <InformationCardBanner informationCard={informationCard} />
           <Footer />
         </div>

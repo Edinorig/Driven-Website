@@ -9,7 +9,7 @@
 }
 
 .smallSize{
-    height: 4vw;
+    height: 4rem;
     width: 11vw;
     border-radius: 0.1875rem;
     padding: 0 1.2rem 0 1.2rem;
@@ -33,4 +33,14 @@ select option{
 
 .errorMessage{
     border: 1px solid var(--bg-error);
+}
+
+
+@media (max-width: 1290px) {
+    .smallSize{
+        height: 4rem;
+        width: 6rem;
+        border-radius: 0.1875rem;
+        padding: 0 1.2rem 0 1.2rem;
+    }
 }

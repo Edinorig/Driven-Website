@@ -12,21 +12,26 @@ button.accentBorder {
 
 .largeSize {
     width: 45%;
-    height: 4rem;
+    min-height: 4vh;
     border-radius: 0.625rem;
+    padding: 0.5em;
 }
 
 .smallSize {
-    width: 23%;
+    min-width: 24em;
     border-radius: 0.625rem;
-    height: 2.5rem;
+    min-height: 2.5vh;
+    padding: 0.5em;
 }
 
-button.hoverBorderGreen,
 button.hoverBorderGreen>h5>p {
-    background: var(--bg-light);
-    border: 1px solid var(--bg-light);
-    color: var(--text-accent);
+    color: var(--text-light);
+}
+
+button.hoverBorderGreen {
+    background: var(--bg-accent);
+    border: 1px solid var(--bg-accent);
+    color: var(--text-light);
 }
 
 .hoverText {

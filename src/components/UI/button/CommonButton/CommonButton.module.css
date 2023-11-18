@@ -47,6 +47,9 @@
     border: 1px solid var(--bg-light);
     color: var(--bg-dark);
 }
+.darkHoverWhiteBorder>h5>p {
+    color: var(--bg-dark);
+}
 
 .whiteHoverWhiteBorder {
     background: var(--bg-accent);
@@ -63,9 +66,9 @@
 }
 
 .largeSize {
-    min-width: 20vw;
-    padding: 0 1vw;
-    height: 2.5vw;
+    min-width: 20rem;
+    padding: 0 1rem;
+    height: 2.5rem;
     box-sizing: border-box;
 }
 
@@ -82,8 +85,8 @@
 }
 
 .mediumSize {
-    width: 15.5vw;
-    height: 2.5vw;
+    width: 15.5rem;
+    height: 2.5rem;
     box-sizing: border-box;
 }
 

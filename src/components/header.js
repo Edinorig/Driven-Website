@@ -2,18 +2,24 @@ import React from 'react';
 import NavBar from './NavBar';
 import logo from '../assets/logo/logo.svg'
 import '../css/header.css'
-import { Link } from 'react-router-dom'
+import {  Link } from 'react-router-dom'
 import CommonButton from './UI/button/CommonButton/CommonButton';
-import burgerMenuIcon from '../assets/img/icons/burgerMenu.svg'
+import phoneIcon from '../assets/img/icons/phone-icon.svg'
+import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
 
-    const [burgerMenu,setBurgerMenu]=React.useState(false)
-
     return (
         <header>
+
+            <div className='wrapper-phone-icon'>
+                <a href='tel:+1-708-515-0171'>
+                    <img className='phone-icon' alt='seo' src={phoneIcon} />
+                </a>
+            </div>
+
             <Link to={"/"}><img className='logo' src={logo} alt="SEO" /></Link>
-            <NavBar stateBurgerMenu={burgerMenu} />
+            <NavBar stateMenu={true}/>
             <div className='wrapper-butn'>
                 <CommonButton
                     color="greenText"
@@ -24,7 +30,7 @@ const Header = () => {
                     link="call-now"
                 />
             </div>
-            <img onClick={() => setBurgerMenu(!burgerMenu)} className='burger-menu' alt='seo' src={burgerMenuIcon} />
+            <BurgerMenu/>
         </header>
     );
 }

@@ -29,7 +29,7 @@
 }
 
 .wrapperAddService {
-    width: 22%;
+    min-width: 22%;
 
     display: flex;
     flex-direction: row;
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 2.3rem 0 0;
+    margin: 2.3rem 0 ;
 }
 
 .wrappesInputsHoryzontaly {
@@ -75,4 +75,10 @@
 
 .primaryText {
     margin: 0.4rem 0 0;
+}
+
+@media (max-width: 1290px) {
+    .wrappesInputsHoryzontaly {
+        flex-direction: column;
+    }
 }

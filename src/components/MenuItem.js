@@ -2,10 +2,12 @@ import Dropdown from './Dropdown';
 import '../css/MenuItems.css'
 import { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
+import arrow from '../assets/img/icons/down-arrow.svg'
 
-const MenuItems = ({ items, depthLevel, mobileMenu }) => {
+const MenuItems = ({ items, depthLevel, mobileMenu, toggleComponent }) => {
   const [dropdown, setDropdown] = useState(false);
   let ref = useRef();
+
   useEffect(() => {
     const handler = (event) => {
       if (dropdown && ref.current && !ref.current.contains(event.target)) {
@@ -27,6 +29,9 @@ const MenuItems = ({ items, depthLevel, mobileMenu }) => {
   const onMouseLeave = () => {
     window.innerWidth > 960 && setDropdown(false);
   };
+
+
+
   return (
     <div className="menu-items"
       ref={ref}
@@ -42,11 +47,11 @@ const MenuItems = ({ items, depthLevel, mobileMenu }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}>
             {items.className === "headerMenu" ? (
-              <h4> {items.title}{''}
-                {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+              <h4> {items.title}
+                {depthLevel > 0 ? <span>&raquo;</span> : <img className='down-arrow' src={arrow} alt='s' />}
               </h4>) :
-              <h6> {items.title}{''}
-                {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+              <h6> {items.title}
+                <img className='down-arrow' src={arrow} alt='s' />
               </h6>
             }
           </button>
@@ -55,17 +60,19 @@ const MenuItems = ({ items, depthLevel, mobileMenu }) => {
             dropdown={dropdown}
             depthLevel={depthLevel}
             mobileMenu={mobileMenu}
-            />
+            toggleComponent={toggleComponent}
+          />
         </>
       ) : (
-        items.className === "headerMenu" ?
-          (<h4 key={items.title}>
+        items.className === "headerMenu" ? (
+          <h4 key={items.title} onClick={() => toggleComponent(false)}>
             <Link to={items.url}>{items.title}</Link>
-          </h4>) :
-          <h6 key={items.title}>
+          </h4>
+        ) : (
+          <h6 key={items.title} onClick={() => toggleComponent(false)}>
             <Link to={items.url}>{items.title}</Link>
           </h6>
-      )}
+        ))}
     </div>
   );
 };

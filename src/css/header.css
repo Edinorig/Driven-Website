@@ -15,6 +15,16 @@ header {
     margin: 0 -7.5vw 0 -7.5vw;
 }
 
+.wrapper-phone-img{
+    width: 13vw;
+    height: 5vh;
+    background-color:firebrick;
+}
+
+.wrapper-phone-icon{
+    display: none;
+}
+
 .burger-menu{
     display: none;
 }
@@ -27,6 +37,7 @@ header {
         display: none;
     }
 
+    .wrapper-phone-icon,
     .burger-menu{
         display: block;
         cursor: pointer;

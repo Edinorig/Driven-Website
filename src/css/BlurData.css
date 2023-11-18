@@ -1,6 +1,6 @@
 .wrapper-blur {
     width: 100vw;
-    height: 40rem;
+    min-height: 40vh;
     background: linear-gradient(50deg, var(--bg-accent), var(--bg-medium));
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
@@ -8,10 +8,10 @@
 }
 
 .wrapper-content {
-    padding: 4rem 10rem 0 10rem;
-    height: 28rem;
+    padding: 4vh 0 0 10vw;
     display: flex;
     align-items: flex-start;
+    overflow-x: hidden;
 }
 
 .wrapper-content-info {
@@ -21,14 +21,9 @@
     justify-content: space-between;
 }
 
-.wrapper-content-img {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
 
 .wrapper-content-img img {
-    height: 22rem;
+    min-height: 19vh;
     margin: 2rem 0 0;
 }
 
@@ -42,6 +37,12 @@
 .secondary-text-styled {
     color: var(--text-dark);
     margin: 1rem 0 0;
+}
+
+.wrapper-content-img{
+    position: relative;
+    right: -37%;
+    top: -4rem;
 }
 
 .wrapper-middle {
@@ -64,5 +65,22 @@
 
     100% {
         background-position: 0 50%;
+    }
+}
+
+
+@media (max-width: 1290px) {
+    .wrapper-content-img {
+        position: relative;
+        right: 7% !important;
+        top: -1rem;
+    }
+
+    .primary-text-styled {
+        white-space: normal;
+        width: 91vw;
+    }
+    .wrapper-content-img img {
+        height: 10rem;
     }
 }

@@ -174,6 +174,8 @@ const CeramicCoating = () => {
             secondaryText: "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish."
         }
     ]
+
+    const titleInformationBanner = "Why Choose a Clear Bra for Your Vehicle?"
     
       return (
         <div>
@@ -230,6 +232,7 @@ const CeramicCoating = () => {
           </section>
           <InformationCardBanner
                 informationCard={informationCard}
+                title={titleInformationBanner}
             />
           <Footer />
         </div>

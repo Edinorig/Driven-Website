@@ -1,4 +1,4 @@
-.button-dropdown{
+.button-dropdown {
     background: none;
 }
 
@@ -18,3 +18,20 @@ li .menu-items:hover {
     color: var(--text-main);
 }
 
+.down-arrow {
+    margin: 0 0 0 0.2rem;
+}
+
+@media (max-width: 768px) {
+
+    .button-dropdown {
+        height: 3rem;
+        display: flex;
+        justify-content: FLEX-END;
+        align-items: center;
+        color: var(--text-main);
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+    }
+}

@@ -12,7 +12,7 @@ const SelectButton = ({
   quantityCards
 }) => {
   const [hovered, setHovered] = React.useState(false);
-  console.log(quantityCards);
+  console.log(hover);
   return (
     <>
       <button

@@ -9,296 +9,341 @@ import carService from "../../assets/img/PaintProtectionFilmPackages/carService.
 import carWash from "../../assets/img/PaintProtectionFilmPackages/carWash.svg";
 import carIcon from "../../assets/img/PaintProtectionFilmPackages/carIcon.svg";
 import saveMoney from "../../assets/img/PaintProtectionFilmPackages/saveMoney.svg";
+import ferariF40 from "../../assets/img/icons/LamborghiniO.svg";
 
 const ExteriorDetaling = () => {
+  const selectButtonsInformation = [
+    {
+      id: 1,
+      primaryText: "Exterior Single-Step Polish",
+      styleButton: "accentBorder",
+      size: "smallSize",
+      description: "Your detailed description for Full Enhancement Detail",
+      hover: "hoverBorderGreen",
+      hoverText: "hoverText",
+      textColor: "accentColor",
+      isDisabled: true,
+    },
+    {
+      id: 2,
+      primaryText: "Exterior Coating Maintenance",
+      styleButton: "accentBackground",
+      size: "smallSize",
+      description: "Your detailed description for Another Package",
+      hover: "hoverBorderGreen",
+      hoverText: "hoverText",
+      textColor: "mainColor",
+      isDisabled: false,
+    },
+    {
+      id: 3,
+      primaryText: "EExterior Enhancement Correction",
+      styleButton: "accentBackground",
+      size: "smallSize",
+      description: "Your detailed description for Another Package",
+      hover: "hoverBorderGreen",
+      hoverText: "hoverText",
+      textColor: "mainColor",
+      isDisabled: false,
+    },
+    {
+      id: 4,
+      primaryText: "Restoration Detail",
+      styleButton: "accentBackground",
+      size: "smallSize",
+      description: "Your detailed description for Another Package",
+      hover: "hoverBorderGreen",
+      hoverText: "hoverText",
+      textColor: "mainColor",
+      isDisabled: false,
+    },
+  ];
 
-    const selectButtonsInformation = [
+  const contentInformation = [
+    {
+      id: 1,
+      turnaround: "3-8 HOURS",
+      content: [
         {
           id: 1,
-          primaryText: "Full Enhancement Detail",
-          styleButton: "accentBorder",
-          size: "smallSize",
-          description: "Your detailed description for Full Enhancement Detail",
-          hover: "hoverBorderGreen",
-          hoverText: "hoverText",
-          textColor: "accentColor",
-          isDisabled: true
+          secondaryText:
+            "This service caters to vehicles in good condition requiring a deep cleaning. Our detailing team conducts a one-step polish to enhance shine and shields cleaned surfaces with a polymer sealant.Optional Upgrade: Elevate your detail with Gtechniq EXO - a one-year, glossy, and highly hydrophobic ceramic coating.",
+        },
+      ],
+      primaryTextList: "Key Features:",
+      primaryTextListStyle: "accentColor",
+      secondaryTextStyle: "mainColorSecondaryText",
+      secondaryTextListStyle: "mainSecondaryTextList",
+      secondaryTextList: [
+        {
+          id: 1,
+          content: "Dual-Bucket Hand Wash for Thorough Cleaning",
         },
         {
           id: 2,
-          primaryText: "Another Package",
-          styleButton: "accentBackground",
-          size: "smallSize",
-          description: "Your detailed description for Another Package",
-          hover: "hoverBorderGreen",
-          hoverText: "hoverText",
-          textColor: "mainColor",
-          isDisabled: false
+          content: "Intensive Cleaning for Wheels and Trim",
         },
         {
           id: 3,
-          primaryText: "Another Package",
-          styleButton: "accentBackground",
-          size: "smallSize",
-          description: "Your detailed description for Another Package",
-          hover: "hoverBorderGreen",
-          hoverText: "hoverText",
-          textColor: "mainColor",
-          isDisabled: false
+          content: "Paint Decontamination: Removing Bugs, Tar, and Sap",
         },
         {
           id: 4,
-          primaryText: "Another Package",
-          styleButton: "accentBackground",
-          size: "smallSize",
-          description: "Your detailed description for Another Package",
-          hover: "hoverBorderGreen",
-          hoverText: "hoverText",
-          textColor: "mainColor",
-          isDisabled: false
+          content: "Single Polishing Step for a Brilliant Shine",
         },
-      ];
-    
-      const contentInformation = [
+        {
+          id: 5,
+          content:
+            "Includes Interior Mini Detail. Upgrade to a Full Interior Detail and Save $100 on Both Services.",
+        },
+      ],
+      packagePriceCard: [
         {
           id: 1,
-          title: "Chicago Auto Pros - Combination Vehicle Detailing Packages",
-          subTitle:
-            "All prices are starting at and are dependent upon vehicle size and inspection",
-          turnaround: "1 DAY",
-          content: [
-            {
-              id: 1,
-              primaryText: "EXTERIOR:",
-              secondaryText:
-                "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
-            },
-            {
-              id: 2,
-              primaryText: "INTERIOR:",
-              secondaryText:
-                "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
-            },
-          ],
-          packagePriceCard: [
-            {
-              id: 1,
-              color: "mainColor",
-              primaryText: "Cars",
-              price: "$1,164",
-              backgroundCard: "backgroundDark",
-            },
-            {
-              id: 2,
-              color: "darkColor",
-              primaryText: "Midsize",
-              price: "$1,446",
-              backgroundCard: "backgroundAccent",
-            },
-            {
-              id: 3,
-              color: "mainColor",
-              primaryText: "Over-Size",
-              price: "$1,728",
-              backgroundCard: "backgroundDark",
-            },
-          ],
+          color: "mainColor",
+          primaryText: "Cars",
+          price: "$350",
+          backgroundCard: "backgroundDark",
         },
         {
           id: 2,
-          hello: "world",
-          title: "Auto Pros - Combination Vehicle Detailing Packages",
-          subTitle:
-            "are starting at and are dependent upon vehicle size and inspection",
-          turnaround: "2 DAY",
-          content: [
-            {
-              id: 1,
-              primaryText: "EXTERIOR:",
-              secondaryText:
-                "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
-            },
-            {
-              id: 2,
-              primaryText: "INTERIOR:",
-              secondaryText:
-                "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
-            },
-          ],
-          packagePriceCard: [
-            {
-              id: 1,
-              color: "mainColor",
-              primaryText: "Cars",
-              price: "$1,164",
-              backgroundCard: "backgroundDark",
-            },
-            {
-              id: 2,
-              color: "darkColor",
-              primaryText: "Midsize",
-              price: "$1,446",
-              backgroundCard: "backgroundAccent",
-            },
-            {
-              id: 3,
-              color: "mainColor",
-              primaryText: "Over-Size",
-              price: "$1,728",
-              backgroundCard: "backgroundDark",
-            },
-          ],
+          color: "darkColor",
+          primaryText: "Midsize",
+          price: "$450",
+          backgroundCard: "backgroundAccent",
         },
         {
           id: 3,
-          hello: "world",
-          title: "Auto Pros - Combination Vehicle Detailing Packages",
-          subTitle:
-            "are starting at and are dependent upon vehicle size and inspection",
-          turnaround: "2 DAY",
-          content: [
-            {
-              id: 1,
-              primaryText: "EXTERIOR:",
-              secondaryText:
-                "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
-            },
-            {
-              id: 2,
-              primaryText: "INTERIOR:",
-              secondaryText:
-                "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
-            },
-          ],
-          packagePriceCard: [
-            {
-              id: 1,
-              color: "mainColor",
-              primaryText: "Cars",
-              price: "$1,164",
-              backgroundCard: "backgroundDark",
-            },
-            {
-              id: 2,
-              color: "darkColor",
-              primaryText: "Midsize",
-              price: "$1,446",
-              backgroundCard: "backgroundAccent",
-            },
-            {
-              id: 3,
-              color: "mainColor",
-              primaryText: "Over-Size",
-              price: "$1,728",
-              backgroundCard: "backgroundDark",
-            },
-          ],
+          color: "mainColor",
+          primaryText: "Over-Size",
+          price: "$600",
+          backgroundCard: "backgroundDark",
         },
-        {
-          id: 4,
-          hello: "world",
-          title: "Auto Pros - Combination Vehicle Detailing Packages",
-          subTitle:
-            "are starting at and are dependent upon vehicle size and inspection",
-          turnaround: "2 DAY",
-          content: [
-            {
-              id: 1,
-              primaryText: "EXTERIOR:",
-              secondaryText:
-                "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
-            },
-            {
-              id: 2,
-              primaryText: "INTERIOR:",
-              secondaryText:
-                "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
-            },
-          ],
-          packagePriceCard: [
-            {
-              id: 1,
-              color: "mainColor",
-              primaryText: "Cars",
-              price: "$1,164",
-              backgroundCard: "backgroundDark",
-            },
-            {
-              id: 2,
-              color: "darkColor",
-              primaryText: "Midsize",
-              price: "$1,446",
-              backgroundCard: "backgroundAccent",
-            },
-            {
-              id: 3,
-              color: "mainColor",
-              primaryText: "Over-Size",
-              price: "$1,728",
-              backgroundCard: "backgroundDark",
-            },
-          ],
-        },
-      ];
-    
-      const informationCard = [
+      ],
+    },
+    {
+      id: 2,
+      turnaround: "5-6 HOURS",
+      content: [
         {
           id: 1,
-          imgSrc: carService,
-          primaryText: "Self-Healing Vehicle Exterior Surface Security",
           secondaryText:
-            "Of all the reasons that vehicle owners bring their cars, trucks, and otherwise to our paint protection film installation team here at Chicago Auto Pros, the most common one is peace of mind. With a clear bra, you can drive freely without flinching every single time you hear a rock ricochet against your door or worrying that your finish will be scratched when parking in a busy lot.",
+            "Our recommended annual service for previously ceramic coated vehicles.Once the car is cleaned and decontaminated, we add a coat of Gtechniq EXO to the paint to refresh the hydrophobic efficacy and help maintain a super high gloss. We also coat your windshield to ensure clear vision in bad weather.",
+        },
+      ],
+      primaryTextList: "Key Features:",
+      primaryTextListStyle: "accentColor",
+      secondaryTextStyle: "mainColorSecondaryText",
+      secondaryTextListStyle: "mainSecondaryTextList",
+      secondaryTextList: [
+        {
+          id: 1,
+          content: "Thorough Two-Bucket Hand Wash for Superior Cleaning",
         },
         {
           id: 2,
-          imgSrc: carWash,
-          primaryText: "Hydrophobic Protection Against Stains and Grime",
-          secondaryText:
-            "This is a very similar characteristic between paint protection films and our ceramic coating packages. While the primary reason most purchase a paint protection film is due to its self-healing abrasion resistance, it too has a hydrophobic, glossy surface that enhances paintwork while preventing stains, fading from the sun, and other surface degradation from the environment.",
+          content:
+            "Intensive Cleaning for Wheels and Trim for a Spotless Finish",
         },
         {
           id: 3,
-          imgSrc: carIcon,
-          primaryText: "Worry-Free Vehicle Ownership",
-          secondaryText:
-            "As we mentioned, most vehicle owners either want their exterior to look flawless for the sake of their pride, or they want a perfect vehicle to know that it will continue to operate properly for many years. Nearly all of the most common concerns that every vehicle owner has will be wiped clean thanks to a paint protection film.",
+          content:
+            "Decontaminate Paint: Removing Bugs, Tar, and Sap for a Clean Surface",
         },
         {
           id: 4,
-          imgSrc: saveMoney,
-          primaryText: "All-Around Low-Maintenance Protection Effort",
-          secondaryText:
-            "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish.",
+          content:
+            "Polish as Needed and Apply a Fresh Layer of Gtechniq EXO Protectant to the Paint, Along with G1 Windshield Protectant for Enhanced Protection.",
         },
-      ];
-    
+        {
+          id: 5,
+          content:
+            "Includes Interior Mini Detail. Upgrade to a Full Interior Detail and Enjoy $100 Savings on Both Services.",
+        },
+      ],
+      packagePriceCard: [
+        {
+          id: 1,
+          color: "mainColor",
+          primaryText: "Cars",
+          price: "$1,164",
+          backgroundCard: "backgroundDark",
+        },
+        {
+          id: 2,
+          color: "darkColor",
+          primaryText: "Midsize",
+          price: "$1,446",
+          backgroundCard: "backgroundAccent",
+        },
+        {
+          id: 3,
+          color: "mainColor",
+          primaryText: "Over-Size",
+          price: "$1,728",
+          backgroundCard: "backgroundDark",
+        },
+      ],
+    },
+    {
+      id: 3,
+      turnaround: "1-2 DAYS",
+      content: [
+        {
+          id: 1,
+          secondaryText:
+            "Our Exterior Enhancement Correction will restore your paint to make it more aesthetically appealing.  We perform a two-step compound and then polish to remove paint defects and bring back that deep luster.  One it's looking great we lock-in the shine with a coat of Gtechniq EXO - a one-year, shiny and highly-hydrophobic ceramic coating.   Optional: Upgrade to Gtechniq Crystal Serum Light for up to 5 years of durability plus protection on the entire exterior of your vehicle including paint, glass, trim and wheel faces.",
+        },
+      ],
+      primaryTextList: "Key Features:",
+      primaryTextListStyle: "accentColor",
+      secondaryTextStyle: "mainColorSecondaryText",
+      secondaryTextListStyle: "mainSecondaryTextList",
+      secondaryTextList: [
+        {
+          id: 1,
+          content:
+            "Comprehensive Coverage, Building on Our Single Step Polish Package",
+        },
+        {
+          id: 2,
+          content:
+            "Introducing a Second Step of Paint Correction, Achieving a Swirl-Free Finish (Eliminating Approximately 85% of Visible Defects).",
+        },
+        {
+          id: 3,
+          content:
+            "Choose between Gtechniq EXO Paint Protectant or Upgrade to Gtechniq Crystal Serum Light Ceramic Coating for Complete Exterior Protection on Your Vehicle.",
+        },
+        {
+          id: 4,
+          content:
+            "Includes Interior Mini Detail. Upgrade to a Full Interior Detail and Enjoy $100 Savings on Both Services.",
+        },
+      ],
+      packagePriceCard: [
+        {
+          id: 1,
+          color: "mainColor",
+          primaryText: "Cars",
+          price: "$995",
+          backgroundCard: "backgroundDark",
+        },
+        {
+          id: 2,
+          color: "darkColor",
+          primaryText: "Midsize",
+          price: "$1195",
+          backgroundCard: "backgroundAccent",
+        },
+        {
+          id: 3,
+          color: "mainColor",
+          primaryText: "Over-Size",
+          price: "$1495",
+          backgroundCard: "backgroundDark",
+        },
+      ],
+    },
+    {
+      id: 4,
+      turnaround: "5+ DAYS",
+      content: [
+        {
+          id: 1,
+          secondaryText:
+            "Experience the ultimate package for your special vehicles. Our dedicated team at Driven Customs meticulously cleans, restores, and protects every surface as if it were our own car.Our detailing experts work diligently, panel-by-panel, to eliminate potential scratches from your vehicle’s paint, including door jambs and under the hood. We perform a deep interior clean and meticulously clean the undercarriage, ensuring no detail is overlooked. Though time-consuming and labor-intensive, this process guarantees that your vehicle will be as flawless as possible. Upon completion, every surface is safeguarded with top-quality coatings for lasting protection.Please note that an in-person vehicle inspection is required to provide an accurate quote. Call us today to schedule a consultation.",
+        },
+      ],
+      primaryTextList: "Key Features:",
+      primaryTextListStyle: "accentColor",
+      secondaryTextStyle: "mainColorSecondaryText",
+      secondaryTextListStyle: "mainSecondaryTextList",
+      secondaryTextList: [
+        {
+          id: 1,
+          content:
+            "A Tailored, Professional Detailing Project Crafted Just for You",
+        },
+        {
+          id: 2,
+          content:
+            "A special towel to remove drops of ENVY from other car enthusiasts!",
+        },
+      ],
+      packagePriceCard: [
+        {
+          id: 1,
+          color: "darkColor",
+          primaryText: "Starts at",
+          price: "$10,000",
+          backgroundCard: "backgroundAccent",
+        },
+      ],
+    },
+  ];
+
+  const informationCard = [
+    {
+      id: 1,
+      imgSrc: carService,
+      primaryText: "Self-Healing Vehicle Exterior Surface Security",
+      secondaryText:
+        "Of all the reasons that vehicle owners bring their cars, trucks, and otherwise to our paint protection film installation team here at Chicago Auto Pros, the most common one is peace of mind. With a clear bra, you can drive freely without flinching every single time you hear a rock ricochet against your door or worrying that your finish will be scratched when parking in a busy lot.",
+    },
+    {
+      id: 2,
+      imgSrc: carWash,
+      primaryText: "Hydrophobic Protection Against Stains and Grime",
+      secondaryText:
+        "This is a very similar characteristic between paint protection films and our ceramic coating packages. While the primary reason most purchase a paint protection film is due to its self-healing abrasion resistance, it too has a hydrophobic, glossy surface that enhances paintwork while preventing stains, fading from the sun, and other surface degradation from the environment.",
+    },
+    {
+      id: 3,
+      imgSrc: carIcon,
+      primaryText: "Worry-Free Vehicle Ownership",
+      secondaryText:
+        "As we mentioned, most vehicle owners either want their exterior to look flawless for the sake of their pride, or they want a perfect vehicle to know that it will continue to operate properly for many years. Nearly all of the most common concerns that every vehicle owner has will be wiped clean thanks to a paint protection film.",
+    },
+    {
+      id: 4,
+      imgSrc: saveMoney,
+      primaryText: "All-Around Low-Maintenance Protection Effort",
+      secondaryText:
+        "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish.",
+    },
+  ];
+
+  const titlePackage =
+    "Driven Customs - Exterior Vehicle Detailing Packages in Chicago, IL";
+
   return (
     <div>
-        <BlurData
-          primaryText="Chicago's Top-Tier Vehicle Detailing Packages"
-          secondaryText="INTERIOR AND EXTERIOR VEHICLE DETAILING PACKAGES COMBINED"
-        />
+      <BlurData
+        primaryText="Top-Tier Exterior Vehicle Detailing Packages in Chicago, IL by Driven Customs"
+        secondaryText="Revitalizing Automotive Exteriors: Thorough Cleaning and Restoration"
+        img={ferariF40}
+      />
       <Package
+        title={titlePackage}
         contentInformation={contentInformation}
         selectButtonsInformation={selectButtonsInformation}
+        imgBg={ferariF40}
       />
       <div className="wrapper-banner">
         <Banner
-          content="Why settle for vehicle perfection halfway? Chicago Auto Pros offers package detailing services that eliminate the need to choose between interior and exterior care. Enjoy affordable rates and the same comprehensive quality found in our individual interior and exterior detailing packages, ensuring your vehicle receives a top-to-bottom clean.
-
-        Our two combination detailing packages were designed with the diverse range of vehicles we encounter in mind. This means fair pricing that considers your specific vehicle size, while still delivering equally high-quality interior and exterior detailing services.
-        
-        Let Chicago Auto Pros' team of automotive enthusiasts assist you in selecting the ideal combination detailing package that perfectly suits your needs. Complete our FREE quick quote form for an accurate price estimate, with a reminder that we'll assess your vehicle's condition upon arrival for your detailing appointment."
-          accentText="The Best "
-          textBorderLine="vehicle Detailing Comes In Pairs"
+          content="Even if you've diligently cared for your vehicle, you might notice its exterior losing its luster. At Driven Customs, we offer solutions through our comprehensive exterior vehicle detailing and enhancement packages! Whether it's a basic exterior maintenance or a full-scale paint correction, your vehicle's journey to exterior perfection begins here.Another crucial reason to opt for our complete exterior vehicle detailing service is to preserve your investments in paint protection films, ceramic coatings, or vibrant color-change vinyl vehicle wraps.Regardless of the need, we're always ready to bring out the ultimate shine and brilliance of your vehicle at Driven Customs! Contact us for more details and to schedule your exterior detailing package today. Explore our additional services to enhance your vehicle even further."
+          accentText="Revitalizing "
+          textBorderLine=" Lackluster Vehicle Exteriors with Our Expert Exterior Detailing Services - Driven Customs"
         />
       </div>
       <PackageBennefit
-        title="A More Cost-Effective Way To Completely Clean Your Ride"
-        content="Perhaps the most notable reason that our detailing team here at Chicago Auto Pros have created the option for package detailing is to help bring cost-effective, complete vehicle detailing to all in the Chicago area. Without the ability to select options that take care of both the interior and exterior of a vehicle, many are forced to choose one or the other. This leaves their ride with lackluster results and not nearly the same value they would have had they had both areas detailed adequately.
-      Our goal at Chicago Auto Pros is to not leave customers between a rock and a hard place and instead work WITH them to help them achieve the best aesthetic and value possible for their car, truck, SUV, or motorcycle. We collaborate with our customers, and have found this effort to be immensely beneficial both for their satisfaction and in fulfilling our mission of vehicle detailing excellence daily.
-      Contact our vehicle detailing crew today to learn more about our two combination vehicle detailing packages, and dont forget to let us know if you have any special requests at the time of your appointment - we will be sure to fulfill them."
+        title="Driven Customs Collaborates With You on Perfecting Your Vehicle"
+        content="At Driven Customs, every decision regarding your vehicle's exterior is made collaboratively and with your explicit permission. We engage with you throughout the entire process, detailing, decontaminating, and correcting the paintwork. We keep you informed every step of the way, sharing insights into our findings and suggesting more intricate detailing services if necessary.To maintain our unparalleled customer service and the exceptional quality our exterior vehicle detailing team delivers, we continuously train in innovative detailing techniques and upgrade our equipment. If you're seeking a reliable automotive detailing shop, your search ends here - Driven Customs is prepared for your vehicle!Explore our combination vehicle detailing packages for a comprehensive interior and exterior clean. Click here to learn more about these specialized detailing services."
       />
+      {/**
+        @todo: ASK DIMA IF WEE NEED THIS COMPONENT
+      **/}
       <InformationCardBanner informationCard={informationCard} />
       <Footer />
     </div>

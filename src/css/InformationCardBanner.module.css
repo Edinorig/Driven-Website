@@ -1,6 +1,6 @@
 .wrapperBannerCardInformation {
-    margin: 5rem -7.5rem 0 -7.5rem;
-    height: 46rem;
+    margin: 5vh -7.5vw 0 -7.5vw;
+    min-height: 46rem;
     background: var(--bg-medium);
     display: flex;
     flex-direction: column;
@@ -20,18 +20,25 @@
 }
 
 .wrapperInformationCards {
-    width: 80%;
+    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    margin: 2.3rem 0 0;
+    align-items: center;
+    gap: 2vw;
+    margin: 2.3vh 0 0;
 }
 
 .wrapperButtonInformationCard{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 4vh 0 0;
+}
 
-    margin: 4rem 0 0 ;
+@media (max-width: 1290px) {
+    .wrapperInformationCards{
+        width: 100vw;
+        overflow-x: auto;
+    }
+
 }

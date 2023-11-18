@@ -3,12 +3,12 @@ import InformationCard from "./InformationCard";
 import CommonButton from "./UI/button/CommonButton/CommonButton";
 import style from "../css/InformationCardBanner.module.css"
 
-const InformationCardBanner = ({informationCard}) => {
+const InformationCardBanner = ({informationCard, title}) => {
   return (
     <div className={style.wrapperBannerCardInformation}>
       <div className={style.wrapperPrimaryTextStyledGreen}>
         <h1 className={style.primaryTextStyledGreen}>
-          <p>Why Should You Consider PPF For Your Ride ?</p>
+          <p>{title}</p>
         </h1>
       </div>
       <div className={style.wrapperInformationCards}>

@@ -9,29 +9,112 @@ import carWash from "../../assets/img/PaintProtectionFilmPackages/carWash.svg";
 import carIcon from "../../assets/img/PaintProtectionFilmPackages/carIcon.svg";
 import saveMoney from "../../assets/img/PaintProtectionFilmPackages/saveMoney.svg";
 import InformationCardBanner from "../../components/InformationCardBanner";
+import mustang from "../../assets/img/icons/Chalanger.svg";
 
 const InteriorDetaling = () => {
-
   const contentInformation = [
     {
       id: 1,
-      hello: "HELLO",
-      title: "DIVEN CUSTOMS - Signature Interior Detail",
-      subTitle:
-        "All prices are starting at and are dependent upon vehicle size and inspection",
-      turnaround: "1 DAY",
       content: [
         {
           id: 1,
-          primaryText: "EXTERIOR:",
           secondaryText:
-            "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
+            "NOTE: The starting price of this package reflects detailing for an average condition automobile. Prices are subject to change based on the overall condition of the vehicle. Price increase factors include, but are not limited to, excess soiling, stains, or pet hair.Combine this with any Exterior Detail and save $100",
+        },
+      ],
+      primaryTextList: "Key Features:",
+      primaryTextListStyle: "accentColor",
+      secondaryTextStyle: "mainColorSecondaryText",
+      secondaryTextListStyle: "mainSecondaryTextList",
+      secondaryTextList: [
+        {
+          id: 1,
+          content:
+            "Thoroughly Vacuum Floors and Trunk Area for a Clean Interior Finish",
         },
         {
           id: 2,
-          primaryText: "INTERIOR:",
-          secondaryText:
-            "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
+          content:
+            "Carefully Wipe Down Vinyl or Plastic Floor Mats for a Spotless Interior Appearance",
+        },
+        {
+          id: 3,
+          content:
+            "Precisely Vacuum Cloth Seats for a Fresh and Clean Interior Feel",
+        },
+        {
+          id: 4,
+          content:
+            "Gently Wipe Down Leather Seats for a Supple and Clean Interior Surface",
+        },
+        {
+          id: 5,
+          content:
+            "Thoroughly Clean Console, Cup Holders, Crevices, and Vents for a Pristine Interior Finish",
+        },
+        {
+          id: 6,
+          content:
+            "Clean Dash and Apply UV Protection for a Shiny and Protected Interior Surface",
+        },
+        {
+          id: 7,
+          content:
+            "Carefully Clean All Interior Trim and Plastics for a Fresh and Tidy Interior Ambiance",
+        },
+        {
+          id: 8,
+          content:
+            "Clean and Condition Door Panels and Pockets for a Refreshed Interior Look and Feel",
+        },
+        {
+          id: 9,
+          content:
+            "Thoroughly Clean Door Jambs for a Complete Interior Detailing Experience",
+        },
+        {
+          id: 10,
+          content:
+            "Meticulously Clean Glass Inside and Out for Crystal Clear Visibility",
+        },
+        {
+          id: 11,
+          content:
+            "Delicately Clean Vehicle Headliner for a Fresh and Spotless Interior Appearance",
+        },
+        {
+          id: 12,
+          content: "Shampoo Cloth Floor Mats for a Deep and Fresh Clean Look",
+        },
+        {
+          id: 13,
+          content:
+            "Thoroughly Shampoo Carpeting in Cabin and Trunk for a Deep and Revitalized Interior Feel",
+        },
+        {
+          id: 14,
+          content:
+            "Effectively Shampoo Cloth Seats for a Fresh and Revitalized Interior Appearance",
+        },
+        {
+          id: 15,
+          content:
+            "Perform a Deep Clean and Condition Leather Seats for a Supple and Luxurious Interior Feel",
+        },
+        {
+          id: 16,
+          content:
+            "Apply Protective Treatment to Leather and Vinyl Surfaces for Long-lasting Durability and Shine",
+        },
+        {
+          id: 17,
+          content:
+            "Trunk and Spare Tire Areas are Thoroughly Cleaned for a Complete Interior Detailing Experience",
+        },
+        {
+          id: 18,
+          content:
+            "Thorough Two-Bucket Hand Wash for a Detailed Exterior Cleaning",
         },
       ],
       packagePriceCard: [
@@ -39,25 +122,25 @@ const InteriorDetaling = () => {
           id: 1,
           color: "mainColor",
           primaryText: "Cars",
-          price: "$1,164",
+          price: "From $250",
           backgroundCard: "backgroundDark",
         },
         {
           id: 2,
           color: "darkColor",
           primaryText: "Midsize",
-          price: "$1,446",
+          price: "From $350",
           backgroundCard: "backgroundAccent",
         },
         {
           id: 3,
           color: "mainColor",
           primaryText: "Over-Size",
-          price: "$1,728",
+          price: "From $450",
           backgroundCard: "backgroundDark",
         },
       ],
-    }
+    },
   ];
 
   const informationCard = [
@@ -90,32 +173,41 @@ const InteriorDetaling = () => {
         "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish.",
     },
   ];
+
+  const titlePackage = "Driven Customs - Vinyl Color Vehicle Wrap Packages";
   return (
     <div>
       <BlurData
-        primaryText="Chicago's Top-Tier Vehicle Detailing Packages"
-        secondaryText="INTERIOR AND EXTERIOR VEHICLE DETAILING PACKAGES COMBINED"
+        primaryText="Comprehensive Interior Vehicle Detailing Services in Chicago, IL by Driven Customs"
+        secondaryText="Safeguard the Intricacies of Your Vehicle’s Interior with Driven Customs"
+        img={mustang}
       />
       <Package
+        title={titlePackage}
         contentInformation={contentInformation}
+        imgBg={mustang}
       />
       <div className="wrapper-banner">
+        {/**
+        @todo: ASK DIMA IF WEE NEED THIS COMPONENT
+      **/}
         <Banner
-          content="Why settle for vehicle perfection halfway? Chicago Auto Pros offers package detailing services that eliminate the need to choose between interior and exterior care. Enjoy affordable rates and the same comprehensive quality found in our individual interior and exterior detailing packages, ensuring your vehicle receives a top-to-bottom clean.
+          content="Why settle for vehicle perfection halfway? Driven Customs offers package detailing services that eliminate the need to choose between interior and exterior care. Enjoy affordable rates and the same comprehensive quality found in our individual interior and exterior detailing packages, ensuring your vehicle receives a top-to-bottom clean.
 
         Our two combination detailing packages were designed with the diverse range of vehicles we encounter in mind. This means fair pricing that considers your specific vehicle size, while still delivering equally high-quality interior and exterior detailing services.
         
-        Let Chicago Auto Pros' team of automotive enthusiasts assist you in selecting the ideal combination detailing package that perfectly suits your needs. Complete our FREE quick quote form for an accurate price estimate, with a reminder that we'll assess your vehicle's condition upon arrival for your detailing appointment."
+        Let Driven Customs team of automotive enthusiasts assist you in selecting the ideal combination detailing package that perfectly suits your needs. Complete our FREE quick quote form for an accurate price estimate, with a reminder that we'll assess your vehicle's condition upon arrival for your detailing appointment."
           accentText="The Best "
           textBorderLine="vehicle Detailing Comes In Pairs"
         />
       </div>
       <PackageBennefit
-        title="A More Cost-Effective Way To Completely Clean Your Ride"
-        content="Perhaps the most notable reason that our detailing team here at Chicago Auto Pros have created the option for package detailing is to help bring cost-effective, complete vehicle detailing to all in the Chicago area. Without the ability to select options that take care of both the interior and exterior of a vehicle, many are forced to choose one or the other. This leaves their ride with lackluster results and not nearly the same value they would have had they had both areas detailed adequately.
-      Our goal at Chicago Auto Pros is to not leave customers between a rock and a hard place and instead work WITH them to help them achieve the best aesthetic and value possible for their car, truck, SUV, or motorcycle. We collaborate with our customers, and have found this effort to be immensely beneficial both for their satisfaction and in fulfilling our mission of vehicle detailing excellence daily.
-      Contact our vehicle detailing crew today to learn more about our two combination vehicle detailing packages, and dont forget to let us know if you have any special requests at the time of your appointment - we will be sure to fulfill them."
+        title="Save Your Time with Expert Interior Detailing Services by Driven Customs"
+        content="Interior detailing can be a time-consuming task for most people. Often, vehicle owners may rush through the process, leaving certain areas inadequately cleaned. This oversight can lead to the accumulation of dust and grime, potentially causing lasting damage to the interior.At Driven Customs, our interior vehicle detailing service is designed to save you time. Instead of spending hours trying to rejuvenate your car's interior with ineffective store-bought products, trust our professionals to handle it for you.If your vehicle requires more than just interior detailing, we offer specialized package detailing services that ensure your car shines both inside and out. Contact one of our interior vehicle detailing experts today for more information about our comprehensive services."
       />
+      {/**
+        @todo: ASK DIMA IF WEE NEED THIS COMPONENT
+      **/}
       <InformationCardBanner informationCard={informationCard} />
       <Footer />
     </div>

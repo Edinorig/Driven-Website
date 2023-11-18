@@ -8,7 +8,7 @@
 .packageWrapper{
     display: flex;
     align-items: center;
-    margin: 2rem -7.5rem 0 0;
+    margin: 2vh -7.5vw 0 0;
     overflow: hidden;
 }
 
@@ -32,7 +32,8 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    width: calc(14em * 5);
+    width: 100vw;
+    overflow-x: scroll;
 }
 
 .wrapperTurnaround{
@@ -47,7 +48,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5rem;
+    gap: 5vw;
     margin: 2.7rem 0 0
 }
 
@@ -56,4 +57,22 @@
     justify-content: center;
     display: flex;
     margin: 2.5rem 0 0;
+}
+
+
+@media (max-width: 1290px) {
+    .packageWrapper{
+        overflow: unset;
+        margin: 2vh 0 0 -7vw;
+    }
+    .wrapperImg{
+        display: none;
+    }
+    .wrapperTittle{
+        width: 100vw;
+        white-space: normal;
+    }
+    .wrapperContent{
+        width: 100vw;
+    }
 }

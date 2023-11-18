@@ -1,14 +1,12 @@
 footer {
-    height: 26vw;
+    min-height: 26vh;
     position: sticky;
     margin: 0 -7.5vw 0 -7.5vw !important;
 }
 
 .wrapper-footer-information {
     height: auto;
-
-    padding: 1.3vw 7.5vw 0 7.5vw;
-
+    padding: 1.3vh 7.5vw 1.3vh 7.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,8 +50,13 @@ footer {
 }
 
 .logo {
-    height: 1.8vw;
+    height: min(40vh, 1.7rem); ;
     cursor: pointer;
+}
+.logo-fotter {
+    height: min(40vh, 1.7rem); ;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
 }
 
 .circle-for-social{
@@ -63,7 +66,7 @@ footer {
 }
 
 .address-information{
-    width: 10.5rem;
+    min-width: 21.5rem;
 }
 
 .email-information,
@@ -78,4 +81,11 @@ footer {
 .telephone-information{
     text-decoration: underline;
     margin: 0.9rem 0 0;
+}
+
+@media (max-width: 1290px) {
+    .wrapper-social-icons{
+        margin: 1.5rem 0 0;
+    }
+
 }

@@ -1,15 +1,15 @@
-.wrapperData{
+.wrapperData {
     display: flex;
     flex-direction: row;
 
     width: 100%;
 }
 
-.formWrapper{
-    padding: 1.5rem 3.1rem 0 3.1rem;
+.formWrapper {
+    padding: 1.5vh 3.1vw 0 3.1vw;
 }
 
-.wrapperContactUs{
+.wrapperContactUs {
     width: 100vw;
     margin: 0 -7.5vw 0 -7.5vw;
 }
@@ -29,133 +29,200 @@
 .secondaryTextTontactUs {
     color: var(--text-main);
     padding: 0.8rem 0 0;
+
 }
 
-.accentWord{
+.accentWord {
     color: var(--text-accent);
 }
 
 .locationWrapper,
-.formWrapper{
-    height: 70rem;
+.formWrapper {
+    min-height: 70rem;
     width: 100%;
+    box-sizing: border-box;
 }
 
-.formWrapper{
+.formWrapper {
     background: var(--bg-medium);
 }
 
-.locationWrapper{
+.locationWrapper {
     background: var(--bg-accent);
-    padding: 1.5rem 3.1rem 0 3.1rem;
+    padding: 1.5vh 3.1vw 0 3.1vw;
 }
 
 
 
-.hegonal1{
+.hegonal1 {
     position: absolute;
     bottom: 0%;
     left: -5%;
 }
-.hegonal2{
+
+.hegonal2 {
     position: absolute;
     top: 0%;
     left: 12%;
 }
-.hegonal3{
+
+.hegonal3 {
     position: absolute;
     bottom: 0%;
     right: 5%;
 }
-.hegonal4{
+
+.hegonal4 {
     position: absolute;
     top: 0%;
-    right: -10%;
+    right: -8%;
 }
 
-.primaryTextContactUsLocation{
+.primaryTextContactUsLocation {
     color: var(--text-dark);
 }
 
-.wraperHorizontal{
+.wraperHorizontal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.wraperShopInformation{
+.wraperShopInformation {
     margin: 1.5rem 0 0;
 }
 
-.secondaryTextShopInformation{
+.secondaryTextShopInformation {
     color: var(--text-dark);
 }
 
 .wraperGaleryShop,
-.wraperHorizontal{
+.wraperHorizontal {
     margin: 1.2rem 0 0;
 }
 
 .wraperGallery,
-.wraperLocation{
+.wraperLocation {
     margin: 0.4rem 0 0;
+    max-height: 20rem;
 }
 
-.wraperGallery{
+.wraperGallery {
     height: 16rem;
     background-color: var(--bg-medium);
 }
 
-.hegonal5{
+.hegonal5 {
     height: 11.8rem;
     position: absolute;
     left: 50%;
 }
-.hegonal6{
+
+.hegonal6 {
     height: 4.7rem;
     position: absolute;
     left: 70%;
     bottom: -40%;
 }
-.hegonal7{
+
+.hegonal7 {
     height: 11.7rem;
     position: absolute;
     left: 80%;
     bottom: -55%;
 }
-.hegonal8{
+
+.hegonal8 {
     height: 4.7rem;
     position: absolute;
     left: 58%;
     bottom: -70%;
 }
-.hegonal9{
+
+.hegonal9 {
     height: 6.7rem;
     position: absolute;
     left: 68%;
     bottom: -57%;
 }
-.hegonal10{
+
+.hegonal10 {
     height: 4.7rem;
     position: absolute;
     left: 78%;
     bottom: -65%;
 }
-.hegonal11{
+
+.hegonal11 {
     position: absolute;
     left: 93.4%;
     bottom: -70%;
 }
 
-.googleMap{
+.googleMap {
     width: 100%;
     height: 100%;
     border: none;
 }
 
 @media (max-width: 1290px) {
-        .wrapperData{
-            flex-direction: column;
-        }
+    .wrapperData {
+        flex-direction: column;
+    }
+
+    .hegonal5 {
+        height: 11.8rem;
+        position: relative;
+        left: 46%;
+        bottom: -179%;
+    }
+
+    .hegonal6 {
+        height: 4.7rem;
+        position: relative;
+        left: -63%;
+        bottom: -189%;
+    }
+
+    .hegonal7 {
+        height: 11.7rem;
+        position: relative;
+        left: -5%;
+        bottom: -175%;
+    }
+
+    .hegonal8 {
+        height: 4.7rem;
+        position: relative;
+        left: 3%;
+        bottom: -189%;
+    }
+
+    .hegonal9 {
+        height: 6.7rem;
+        position: relative;
+        left: 14%;
+        bottom: 28rem;
+    }
+
+    .hegonal10 {
+        height: 4.7rem;
+        position: relative;
+        left: 1%;
+        bottom: 23rem;
+    }
+
+    .hegonal11 {
+        position: relative;
+        left: 23.4%;
+        bottom: 15rem;
+    }
+
+    .hegonal2,
+    .hegonal3,
+    .hegonal4,
+    .hegonal1 {
+        display: none;
+    }
 }

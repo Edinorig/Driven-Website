@@ -4,8 +4,15 @@ import DescriptionContent from "./DescriptionContent";
 import SelectButton from "./UI/button/SelectButton/SelectButton.jsx";
 import PackagePriceCard from "./PackagePriceCard";
 import CommonButton from "./UI/button/CommonButton/CommonButton";
+import cardStyle from "../css/Card.module.css";
 
-const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
+const Package = ({
+  contentInformation,
+  selectButtonsInformation,
+  imgBg,
+  title,
+  subTitle,
+}) => {
   const [contentInformationId, setSelectedButtonId] = useState(1);
   const [button, setButton] = useState(selectButtonsInformation);
 
@@ -15,8 +22,8 @@ const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
     setButton((prev) =>
       prev.map((item) =>
         item.id === id
-          ? { ...item, styleButton: "accentBorder", isDisabled: true }
-          : { ...item, styleButton: "accentBackground", isDisabled: false }
+          ? { ...item, styleButton: "accentBackground", isDisabled: true }
+          : { ...item, styleButton: "accentBorder", isDisabled: false }
       )
     );
   };
@@ -24,20 +31,23 @@ const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
   const contentInfo = contentInformation.find(
     (content) => content.id === contentInformationId
   );
-
   return (
     <div className={style.packageWrapper}>
-      <div>
-        <div className={style.wrapperTittle}>
-          <div className={style.wrapperPrimaryText}>
-            <h3>
-              <p>{contentInfo.title}</p>
-            </h3>
+      <div className={style.wrapperContent}>
+        {title ? (
+          <div className={style.wrapperTittle}>
+            <div className={style.wrapperPrimaryText}>
+              <h3>
+                <p>{title}</p>
+              </h3>
+            </div>
+            {subTitle ? (
+              <div className={style.wrapperSecondaryText}>
+                <h6 className={style.accentColor}>{subTitle}</h6>
+              </div>
+            ) : null}
           </div>
-          <div className={style.wrapperSecondaryText}>
-            <h6 className={style.accentColor}>{contentInfo.subTitle}</h6>
-          </div>
-        </div>
+        ) : null}
         <div className={style.wrapperSelectButtons}>
           {button
             ? button.map((item) => (
@@ -71,6 +81,40 @@ const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
               />
             ))}
           </div>
+          {contentInfo.primaryTextList ? (
+            <div className={cardStyle.wrapperContent}>
+              <div className={cardStyle.wrapperList}>
+                <h5>
+                  <p className={cardStyle[contentInfo.primaryTextListStyle]}>
+                    {contentInfo.primaryTextList}
+                  </p>
+                </h5>
+                <div className={cardStyle.wrapperSecondaryTextList}>
+                  <ul className={cardStyle.wrappertextList}>
+                    {contentInfo.secondaryTextList.map((item) => (
+                      <li
+                        key={item.id}
+                        className={
+                          cardStyle[contentInfo.secondaryTextListStyle]
+                        }
+                      >
+                        {" "}
+                        <h6>
+                          <p
+                            className={
+                              cardStyle[contentInfo.secondaryTextListStyle]
+                            }
+                          >
+                            {item.content}
+                          </p>
+                        </h6>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ) : null}
           <div className={style.wrapperBenefitsCards}>
             {contentInfo.packagePriceCard.map((item) => (
               <PackagePriceCard
@@ -94,7 +138,7 @@ const Package = ({ contentInformation, selectButtonsInformation, imgBg }) => {
           </div>
         </div>
       </div>
-              {imgBg ? (
+      {imgBg ? (
         <div className={style.wrapperImg}>
           <img src={imgBg} alt="se" />
         </div>

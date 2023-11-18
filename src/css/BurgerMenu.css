@@ -1,0 +1,68 @@
+.wrapper-burger-menu {
+
+        width: 100vw;
+        height: 100vh;
+        background: #1e1e1e;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 1rem;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: flex; /* Remove the extra character here */
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
+      
+      
+}
+
+.wrapper-find-us-content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.wrapper-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapper-cennect-us{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+}
+
+.wrapper-social-media{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find-us-icons{
+    height: 4rem;
+}
+
+.middle-icon{
+    border-right: 2px solid var(--accent-color);
+    border-left: 2px solid var(--accent-color);
+    width: 7rem;
+}
+
+.wrapper-find-us{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0;
+
+}

@@ -9,21 +9,21 @@ const BlurData = ({ primaryText, secondaryText, img }) => {
                 <div>
                     <h1><p className='primary-text-styled'>{primaryText}</p></h1>
                     {secondaryText ? <h6><p className='secondary-text-styled'>{secondaryText}</p></h6> : null}
-                    <div className='wrapper-middle'>
-                        <div className='wrapper-btn-service'>
-                            <CommonButton
-                                color="greenText"
-                                background="blackBackgroundWhiteBorder"
-                                size="largeSize"
-                                hover="darkHoverWhiteBorder"
-                                text="BOOK NOW"
-                                link="contact-us"
-                            />
-                        </div>
-                        <div className='wrapper-content-img'>
-                            <img src={img} alt='Car styling' />
-                        </div>
+
+                    <div className='wrapper-btn-service'>
+                        <CommonButton
+                            color="greenText"
+                            background="blackBackgroundWhiteBorder"
+                            size="largeSize"
+                            hover="darkHoverWhiteBorder"
+                            text="BOOK NOW"
+                            link="contact-us"
+                        />
                     </div>
+                    <div className='wrapper-content-img'>
+                        <img src={img} alt='Car styling' />
+                    </div>
+
                 </div>
             </div>
         </div >

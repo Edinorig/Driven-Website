@@ -11,6 +11,7 @@ import carService from '../../assets/img/PaintProtectionFilmPackages/carService.
 import carWash from '../../assets/img/PaintProtectionFilmPackages/carWash.svg'
 import carIcon from '../../assets/img/PaintProtectionFilmPackages/carIcon.svg'
 import saveMoney from '../../assets/img/PaintProtectionFilmPackages/saveMoney.svg'
+import gWagon from '../../assets/img/icons/GWAGON.svg'
 
 const PaintProtectionFilmPackages = () => {
 
@@ -18,26 +19,26 @@ const PaintProtectionFilmPackages = () => {
         {
             id: 1,
             imgSrc: carService,
-            primaryText: "Self-Healing Vehicle Exterior Surface Security",
-            secondaryText: "Of all the reasons that vehicle owners bring their cars, trucks, and otherwise to our paint protection film installation team here at Chicago Auto Pros, the most common one is peace of mind. With a clear bra, you can drive freely without flinching every single time you hear a rock ricochet against your door or worrying that your finish will be scratched when parking in a busy lot."
+            primaryText: "SSelf-Healing Protection for Your Vehicle's Exterior Surface",
+            secondaryText: "Among the various reasons vehicle owners entrust their cars, trucks, and other vehicles to our paint protection film installation team at Driven Customs, peace of mind stands out as the most prevalent. The clear bra ensures you can drive without flinching at every rock ricochet or fearing scratches in busy parking lots, allowing for worry-free driving experiences."
         },
         {
             id: 2,
             imgSrc: carWash,
-            primaryText: "Hydrophobic Protection Against Stains and Grime",
-            secondaryText: "This is a very similar characteristic between paint protection films and our ceramic coating packages. While the primary reason most purchase a paint protection film is due to its self-healing abrasion resistance, it too has a hydrophobic, glossy surface that enhances paintwork while preventing stains, fading from the sun, and other surface degradation from the environment."
+            primaryText: "Hydrophobic Shield: Guarding Against Stains and Grime",
+            secondaryText: "Both paint protection films and our ceramic coating packages share a striking similarity. While the primary motivation behind most paint protection film purchases is its self-healing abrasion resistance, it also boasts a hydrophobic, glossy surface. This surface not only enhances the paintwork but also safeguards against stains, sun fading, and other surface degradation caused by environmental factors."
         },
         {
             id: 3,
             imgSrc: carIcon,
-            primaryText: "Worry-Free Vehicle Ownership",
-            secondaryText: "As we mentioned, most vehicle owners either want their exterior to look flawless for the sake of their pride, or they want a perfect vehicle to know that it will continue to operate properly for many years. Nearly all of the most common concerns that every vehicle owner has will be wiped clean thanks to a paint protection film."
+            primaryText: "Stress-Free Vehicle Ownership Experience",
+            secondaryText: "As previously mentioned, the majority of vehicle owners desire a flawless exterior either for their pride or to ensure the vehicle continues to operate properly for many years. A paint protection film effectively addresses nearly all common concerns shared by vehicle owners, ensuring worries are wiped clean."
         },
         {
             id: 4,
             imgSrc: saveMoney,
-            primaryText: "All-Around Low-Maintenance Protection Effort",
-            secondaryText: "Your vehicle’s surfaces that can be covered by a clear bra are sure to boast some of the most low-maintenance characteristics imaginable. This is not only by way of less frequent exterior cleaning, but also via its resistance to abrasions that would ultimately need to be buffed and polished from your finish."
+            primaryText: "Comprehensive Low-Maintenance Protection Solution",
+            secondaryText: "Surfaces protected by a clear bra on your vehicle require minimal maintenance. This not only reduces the frequency of exterior cleaning but also prevents abrasions that would otherwise need buffing and polishing to maintain your finish."
         }
     ]
 
@@ -50,7 +51,7 @@ const PaintProtectionFilmPackages = () => {
         background: "darkBackground",
         primaryText: "PARTIAL PROTECTION",
         colorPrimaryText: "accentColor",
-        secondaryText: "Our Partial Protection PPF covers from 18” to 24” of your vehicle’s hood surface with an Opticle Clear Bra.",
+        secondaryText: "Our Partial Protection PPF shields 18” to 24” of your vehicle’s hood with an Opticle Clear Bra.",
         secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
         primaryTextListStyle: "accentColor",
@@ -94,7 +95,7 @@ const PaintProtectionFilmPackages = () => {
         background: "accentBackground",
         primaryText: "FULL FRONT PROTECTION",
         colorPrimaryText: "colorDarkPrimaryText",
-        secondaryText: "A special feature of our Full Front Protection PPF package is that we incorporate wrapped edges .",
+        secondaryText: "Our Full Front Protection PPF package includes the special feature of wrapped edges for enhanced coverage.",
         secondaryTextStyle: "darkColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
         primaryTextListStyle: "darkColor",
@@ -142,7 +143,7 @@ const PaintProtectionFilmPackages = () => {
         background: "darkBackground",
         primaryText: "PARTIAL PROTECTION",
         colorPrimaryText: "accentColor",
-        secondaryText: "Our Partial Protection PPF covers from 18” to 24” of your vehicle’s hood surface with an Opticle Clear Bra.",
+        secondaryText: "Whether you desire an invisible protective film or a custom stealth appearance with a matte finish, our Full Car Protection PPF package offers durable surface protection and effortless maintenance for all types of automobiles.",
         secondaryTextStyle: "mainColorSecondaryText",
         primaryTextList: "THIS PACKAGE INCLUDES:",
         primaryTextListStyle: "accentColor",
@@ -166,6 +167,8 @@ const PaintProtectionFilmPackages = () => {
         secondaryTextListStyle: "mainSecondaryTextList"
     }
     ])
+
+    const titleInformationBanner = "Why Choose a Clear Bra for Your Vehicle?"
 
     const images = {
         1: PartialProtection,
@@ -194,7 +197,8 @@ const PaintProtectionFilmPackages = () => {
     return (
         <div>
             <BlurData
-                primaryText="Get invisible and strongprotection for your vehicle"
+                primaryText="TOP Paint Protection Film Packages Located In Chicago, IL"
+                img={gWagon}
             />
             <div className='wrapper-package'>
                 <div className='wrapper-primary-text'>
@@ -224,11 +228,12 @@ const PaintProtectionFilmPackages = () => {
                     ))}
                 </div>
                 <div className='wrapper-img-ppf'>
-                    <img src={images[selectedImageId]} alt='Car Protection' />
+                    <img className='selectCard-car' src={images[selectedImageId]} alt='Car Protection' />
                 </div>
             </div>
             <InformationCardBanner
                 informationCard={informationCard}
+                title={titleInformationBanner}
             />
             <Footer />
         </div >

@@ -14,5 +14,11 @@
 }
 
 .icon-tinting{
-    width: 6vw;
+    width: 6rem;
+}
+
+@media (max-width: 1290px) {
+    .wrapper-benefits-primary-text{
+        font-size: 1rem;
+    }
 }

@@ -9,53 +9,50 @@ import carWash from "../../assets/img/PaintProtectionFilmPackages/carWash.svg";
 import carIcon from "../../assets/img/PaintProtectionFilmPackages/carIcon.svg";
 import saveMoney from "../../assets/img/PaintProtectionFilmPackages/saveMoney.svg";
 import InformationCardBanner from "../../components/InformationCardBanner";
+import maclaren from "../../assets/img/icons/MClaren.svg";
 
 const PackageDetaling = () => {
   const selectButtonsInformation = [
     {
       id: 1,
       primaryText: "Full Enhancement Detail",
-      styleButton: "accentBorder",
+      styleButton: "accentBackground",
       size: "largeSize",
       description: "Your detailed description for Full Enhancement Detail",
       hover: "hoverBorderGreen",
       hoverText: "hoverText",
       textColor: "accentColor",
-      isDisabled: true
+      isDisabled: true,
     },
     {
       id: 2,
-      primaryText: "Another Package",
-      styleButton: "accentBackground",
+      primaryText: "Full Maintenance Detail",
+      styleButton: "accentBorder",
       size: "largeSize",
       description: "Your detailed description for Another Package",
       hover: "hoverBorderGreen",
       hoverText: "hoverText",
       textColor: "mainColor",
-      isDisabled: false
+      isDisabled: false,
     },
   ];
 
   const contentInformation = [
     {
       id: 1,
-      hello: "HELLO",
-      title: "Chicago Auto Pros - Combination Vehicle Detailing Packages",
-      subTitle:
-        "All prices are starting at and are dependent upon vehicle size and inspection",
       turnaround: "1 DAY",
       content: [
         {
           id: 1,
           primaryText: "EXTERIOR:",
           secondaryText:
-            "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
+            "Our Full Enhancement detailing package begins with a meticulous hand wash and thorough decontamination of your vehicle. Subsequently, we execute a paint correction process aiming to eliminate up to 85% of paint defects, resulting in a significantly improved finish. During the correction, we employ a compound designed to remove swirls, scratches, and random defects before polishing, enhancing optical clarity, depth, and gloss on your vehicle’s surface. To complete the process, we apply a high-quality silica spray sealant. We also recommend considering an upgrade to a paint sealant or, more beneficially, a Ceramic Coating for extended shine and enduring protection.",
         },
         {
           id: 2,
           primaryText: "INTERIOR:",
           secondaryText:
-            "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
+            "At Driven Customs, we proceed to rejuvenate your vehicle’s interior with our specialized interior detailing service. This includes a thorough cleaning of all interior surfaces, eliminating dirt, debris, and odors to restore your vehicle's fresh scent.Our team employs a hot water extractor to shampoo and deep-clean the carpeting, while cloth seats undergo a thorough shampooing, and leather seats are cleaned using a pH-neutral leather cleaner and enriched with a safe conditioner.Special detergents are used to gently remove any stains from the headliner, and we ensure the trunk and spare tire areas are also meticulously cleaned for a comprehensive interior refresh.",
         },
       ],
       packagePriceCard: [
@@ -84,23 +81,19 @@ const PackageDetaling = () => {
     },
     {
       id: 2,
-      hello: "world",
-      title: "Auto Pros - Combination Vehicle Detailing Packages",
-      subTitle:
-        "are starting at and are dependent upon vehicle size and inspection",
-      turnaround: "2 DAY",
+      turnaround: "6+ HOURS",
       content: [
         {
           id: 1,
           primaryText: "EXTERIOR:",
           secondaryText:
-            "Our Comprehensive Detailing Package begins with meticulous exterior care. We start by hand washing and thoroughly decontaminating your vehicle. Our paint correction process targets up to 85% of paint defects, erasing swirls, scratches, and imperfections, followed by a polishing step for added clarity, depth, and a stunning gloss. To finish, we apply a premium silica spray sealant. Consider upgrading to a paint sealant or a Ceramic Coating for maximum shine and long-lasting protection.",
+            "Our Full Maintenance detailing package encompasses our Exterior Maintenance Detail, enhancing shine and providing protection to maintain your paint's freshness.Through our meticulous car wash, utilizing the advanced two-bucket method along with new mitts and towels, your vehicle undergoes comprehensive decontamination. Additionally, we perform a clay-bar treatment, ensuring thorough cleansing and revitalization.",
         },
         {
           id: 2,
           primaryText: "INTERIOR:",
           secondaryText:
-            "Chicago Auto Pros elevates interior detailing. Our team provides a rejuvenating service, eliminating dirt, debris, and odors, restoring that new car scent. We use hot water extraction for deep carpet cleaning, gentle shampoo for cloth seats, and a pH-neutral leather cleaner with conditioner for leather seats.Stains on the headliner vanish with specialized detergents, and the trunk and spare tire areas are thoroughly cleaned. Our interior detailing ensures a fresh, like-new interior you'll adore.",
+            "At Driven Customs, we proceed to revitalize your vehicle’s interior with our specialized interior detailing service. This comprehensive process involves deep cleaning all interior surfaces to eliminate dirt, debris, and odors, restoring that delightful new car scent.Our team utilizes a hot water extractor to thoroughly shampoo and deep-clean the carpeting. Cloth seats undergo a meticulous shampooing, while leather seats are cleaned using a pH-neutral leather cleaner and enriched with a safe conditioner.Stubborn stains on the headliner are gently removed with specialized detergents, ensuring a spotless finish. Moreover, the trunk and spare tire areas receive the same thorough cleaning for a complete interior refresh.",
         },
       ],
       packagePriceCard: [
@@ -108,21 +101,21 @@ const PackageDetaling = () => {
           id: 1,
           color: "mainColor",
           primaryText: "Cars",
-          price: "$1,164",
+          price: "$590",
           backgroundCard: "backgroundDark",
         },
         {
           id: 2,
           color: "darkColor",
           primaryText: "Midsize",
-          price: "$1,446",
+          price: "$755",
           backgroundCard: "backgroundAccent",
         },
         {
           id: 3,
           color: "mainColor",
           primaryText: "Over-Size",
-          price: "$1,728",
+          price: "$920",
           backgroundCard: "backgroundDark",
         },
       ],
@@ -160,33 +153,38 @@ const PackageDetaling = () => {
     },
   ];
 
+  const titlePackage =
+    "Driven Customs - Combination Vehicle Detailing Packages in Chicago";
+  const subTitlePackage =
+    "*All prices are starting at and may vary based on vehicle size and inspection.";
+
   return (
     <div>
-        <BlurData
-          primaryText="Chicago's Top-Tier Vehicle Detailing Packages"
-          secondaryText="INTERIOR AND EXTERIOR VEHICLE DETAILING PACKAGES COMBINED"
-        />
+      <BlurData
+        primaryText="Top-Tier Vehicle Detailing Packages in Chicago by Driven Customs"
+        secondaryText="Combined Interior and Exterior Vehicle Detailing Packages"
+        img={maclaren}
+      />
       <Package
+        title={titlePackage}
+        subTitle={subTitlePackage}
         contentInformation={contentInformation}
         selectButtonsInformation={selectButtonsInformation}
       />
       <div className="wrapper-banner">
         <Banner
-          content="Why settle for vehicle perfection halfway? Chicago Auto Pros offers package detailing services that eliminate the need to choose between interior and exterior care. Enjoy affordable rates and the same comprehensive quality found in our individual interior and exterior detailing packages, ensuring your vehicle receives a top-to-bottom clean.
-
-        Our two combination detailing packages were designed with the diverse range of vehicles we encounter in mind. This means fair pricing that considers your specific vehicle size, while still delivering equally high-quality interior and exterior detailing services.
-        
-        Let Chicago Auto Pros' team of automotive enthusiasts assist you in selecting the ideal combination detailing package that perfectly suits your needs. Complete our FREE quick quote form for an accurate price estimate, with a reminder that we'll assess your vehicle's condition upon arrival for your detailing appointment."
-          accentText="The Best "
-          textBorderLine="vehicle Detailing Comes In Pairs"
+          content="Why settle for partial perfection when your vehicle deserves a complete makeover? At Driven Customs, our package detailing services offer the best of both worlds – exceptional interior and exterior detailing, all in one go. We understand the diversity of vehicles we encounter daily, which is why our combination detailing packages are tailored to individual needs. This ensures fairness in pricing, meaning a compact car owner won't be charged the same as someone with a large pickup truck. Regardless of your vehicle's size, rest assured you'll receive top-notch interior and exterior detailing tailored to your specific needs.Let our team of car enthusiasts at Driven Customs guide you through our two combination vehicle detailing packages, ensuring all your requirements are met perfectly. Fill out our FREE quick quote form for an accurate estimate. Remember, we'll assess your car's condition upon your detailing appointment to provide the most precise service."
+          accentText="Exceptional "
+          textBorderLine=" Vehicle Detailing Always Comes in Pairs at Driven Customs"
         />
       </div>
       <PackageBennefit
-        title="A More Cost-Effective Way To Completely Clean Your Ride"
-        content="Perhaps the most notable reason that our detailing team here at Chicago Auto Pros have created the option for package detailing is to help bring cost-effective, complete vehicle detailing to all in the Chicago area. Without the ability to select options that take care of both the interior and exterior of a vehicle, many are forced to choose one or the other. This leaves their ride with lackluster results and not nearly the same value they would have had they had both areas detailed adequately.
-      Our goal at Chicago Auto Pros is to not leave customers between a rock and a hard place and instead work WITH them to help them achieve the best aesthetic and value possible for their car, truck, SUV, or motorcycle. We collaborate with our customers, and have found this effort to be immensely beneficial both for their satisfaction and in fulfilling our mission of vehicle detailing excellence daily.
-      Contact our vehicle detailing crew today to learn more about our two combination vehicle detailing packages, and dont forget to let us know if you have any special requests at the time of your appointment - we will be sure to fulfill them."
+        title="A More Affordable Approach to Thoroughly Clean Your Vehicle"
+        content="Our detailing team at Driven Customs has introduced package detailing precisely to make complete vehicle detailing accessible and affordable for everyone in the Chicago area. Often, without the option for comprehensive interior and exterior detailing, vehicle owners are left with a choice between one or the other. This compromise results in subpar outcomes and significantly less value than if both areas were thoroughly detailed.At Driven Customs, we aim to work alongside our customers, not against them, ensuring they achieve the best aesthetic and value for their car, truck, SUV, or motorcycle. Collaboration with our clients has proven incredibly beneficial, enhancing their satisfaction and aligning with our commitment to daily excellence in vehicle detailing.Reach out to our vehicle detailing crew today to discover more about our two combination vehicle detailing packages. Feel free to communicate any special requests during your appointment - we are here to fulfill them to your satisfaction."
       />
+      {/**
+        @todo: ASK DIMA IF WEE NEED THIS COMPONENT
+      **/}
       <InformationCardBanner informationCard={informationCard} />
       <Footer />
     </div>

@@ -1,40 +1,44 @@
-.wrapperInformationCard {}
-
 .informationCard {
     background: var(--bg-dark-soft);
-    height: 28rem;
-    width: 15rem;
-
-    padding: 0 1rem 0 1rem;
+    min-height: 62vh;
+    width: 15vw;
+    padding: 1vw;
     box-sizing: border-box;
 }
 
 .wrapperImg {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     padding: 1.2rem 0 0 0;
 }
 
-.wrapperPrimaryAccentText{
+.wrapperPrimaryAccentText {
     margin: 1.8rem 0 0;
     width: 100%;
 }
 
-.wrapperSecondaryText{
+.wrapperSecondaryText {
     margin: 1.8rem 0 0;
     width: 100%;
 }
 
-.imgIconReadCard{
+.imgIconReadCard {
     height: 50px;
 }
 
-.accentText{
+.accentText {
     color: var(--text-accent);
-    height: 3.8rem;
+    min-height: 3.8vh;
 }
 
-.secondaryCarsText{
+.secondaryCarsText {
     font-size: 0.7rem;
+}
+
+@media (max-width: 1290px) {
+.informationCard{
+    width: 12rem;
+}
+
 }

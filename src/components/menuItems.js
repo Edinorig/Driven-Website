@@ -11,21 +11,11 @@ export const menuItems = [
     submenu: [
       {
         title: 'Paint Protection Film',
-        submenu: [
-          {
-            title: 'Paint Protection Film Packages',
-            url: '/services/paint-protection-film/paint-protection-film-packages'
-          }
-        ]
+        url: '/services/paint-protection-film/paint-protection-film-packages',
       },
       {
         title: 'Ceramic Coating',
-        submenu: [
-          {
-            title: 'Ceramic Coating Packages',
-            url: '/services/ceramic-coating/ceramic-coating-packages'
-          }
-        ]
+        url: '/services/ceramic-coating/ceramic-coating-packages',
       },
       {
         title: 'Window Tinting',
@@ -49,6 +39,10 @@ export const menuItems = [
           {
             title: 'Interior Detaling',
             url: '/services/detaling/interior-detaling'
+          },
+          {
+            title: 'Fleet Detaling',
+            url: '/services/detaling/fleet-detaling'
           }
         ]
       },
@@ -68,8 +62,8 @@ export const menuItems = [
     className:'headerMenu'
   },
   {
-    title: 'Learn More',
-    url: '/learn-more',
+    title: 'About Us',
+    url: '/about-us',
     className:'headerMenu'
   },
 ];

@@ -8,7 +8,7 @@ const PackageBennefit = ({title, content}) => {
       <div>
         <div className={style.wrapperTittle}>
           <h4>
-            <p>{title}</p>
+            <p className={style.accentColor}>{title}</p>
           </h4>
         </div>
         <div className={style.wrapperDescription}>
